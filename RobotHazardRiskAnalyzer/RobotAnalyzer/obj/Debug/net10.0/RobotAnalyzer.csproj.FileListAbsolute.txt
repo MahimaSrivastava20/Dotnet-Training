@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\bin\Debug\net10.0\RobotAnalyzer.exe
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\bin\Debug\net10.0\RobotAnalyzer.deps.json
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\bin\Debug\net10.0\RobotAnalyzer.runtimeconfig.json
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\bin\Debug\net10.0\RobotAnalyzer.dll
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\bin\Debug\net10.0\RobotAnalyzer.pdb
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.AssemblyInfo.cs
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.sourcelink.json
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.dll
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\refint\RobotAnalyzer.dll
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.pdb
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\RobotAnalyzer.genruntimeconfig.cache
+C:\Users\hp\Desktop\lpu.net\RobotHazardRiskAnalyzer\RobotAnalyzer\obj\Debug\net10.0\ref\RobotAnalyzer.dll
