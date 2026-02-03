@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\bin\Debug\net10.0\question3.exe
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\bin\Debug\net10.0\question3.deps.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\bin\Debug\net10.0\question3.runtimeconfig.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\bin\Debug\net10.0\question3.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\bin\Debug\net10.0\question3.pdb
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.AssemblyInfo.cs
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.sourcelink.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\refint\question3.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.pdb
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\question3.genruntimeconfig.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\Inventory\question3\obj\Debug\net10.0\ref\question3.dll
