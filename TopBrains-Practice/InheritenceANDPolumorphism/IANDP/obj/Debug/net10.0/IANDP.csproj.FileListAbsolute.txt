@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.AssemblyInfo.cs
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.sourcelink.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\bin\Debug\net10.0\IANDP.exe
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\bin\Debug\net10.0\IANDP.deps.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\bin\Debug\net10.0\IANDP.runtimeconfig.json
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\bin\Debug\net10.0\IANDP.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\bin\Debug\net10.0\IANDP.pdb
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\refint\IANDP.dll
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.pdb
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\IANDP.genruntimeconfig.cache
+C:\Users\hp\Desktop\lpu.net\TopBrains-Practice\InheritenceANDPolumorphism\IANDP\obj\Debug\net10.0\ref\IANDP.dll
