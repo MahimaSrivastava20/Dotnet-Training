@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.AssemblyInfo.cs
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.exe
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.deps.json
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.runtimeconfig.json
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.dll
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\bin\Debug\net8.0\UniverSity Course Registration System.pdb
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.dll
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\refint\UniverSity Course Registration System.dll
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.pdb
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\UniverSity Course Registration System.genruntimeconfig.cache
+C:\Users\hp\Desktop\UniverSity Course Registration System\UniverSity Course Registration System\obj\Debug\net8.0\ref\UniverSity Course Registration System.dll
