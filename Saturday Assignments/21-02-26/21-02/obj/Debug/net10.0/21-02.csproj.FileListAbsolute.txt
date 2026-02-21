@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\bin\Debug\net10.0\21-02.exe
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\bin\Debug\net10.0\21-02.deps.json
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\bin\Debug\net10.0\21-02.runtimeconfig.json
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\bin\Debug\net10.0\21-02.dll
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\bin\Debug\net10.0\21-02.pdb
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.AssemblyInfo.cs
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.dll
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\refint\21-02.dll
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.pdb
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\21-02.genruntimeconfig.cache
+C:\Users\hp\Desktop\Saturday Assignment\21-02-26\21-02\obj\Debug\net10.0\ref\21-02.dll
