@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|c:\\users\\hp\\source\\repos\\dtounderstanding\\dtounderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|solutionrelative:dtounderstanding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|c:\\users\\hp\\source\\repos\\dtounderstanding\\dtounderstanding\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|solutionrelative:dtounderstanding\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|c:\\users\\hp\\source\\repos\\dtounderstanding\\dtounderstanding\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|solutionrelative:dtounderstanding\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|c:\\users\\hp\\source\\repos\\dtounderstanding\\dtounderstanding\\dto\\studentcreaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|solutionrelative:dtounderstanding\\dto\\studentcreaterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|c:\\users\\hp\\source\\repos\\dtounderstanding\\dtounderstanding\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C9CD499-2A43-4161-A616-781248D9629B}|DTOunderstanding\\DTOunderstanding.csproj|solutionrelative:dtounderstanding\\dto\\studentresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Program.cs",
+              "RelativeDocumentMoniker": "DTOunderstanding\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Program.cs",
+              "RelativeToolTip": "DTOunderstanding\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:12:49.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "DTOunderstanding\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "DTOunderstanding\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:07:49.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Model\\Student.cs",
+              "RelativeDocumentMoniker": "DTOunderstanding\\Model\\Student.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\Model\\Student.cs",
+              "RelativeToolTip": "DTOunderstanding\\Model\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:06:45.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\DTO\\StudentResponseDTO.cs",
+              "RelativeDocumentMoniker": "DTOunderstanding\\DTO\\StudentResponseDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\DTO\\StudentResponseDTO.cs",
+              "RelativeToolTip": "DTOunderstanding\\DTO\\StudentResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:06:19.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentCreateRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "RelativeDocumentMoniker": "DTOunderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\DTOunderstanding\\DTOunderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "RelativeToolTip": "DTOunderstanding\\DTO\\StudentCreateRequestDTO.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T05:04:57.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Saturday Assignment\\21-02-26\\21-02\\21-02.csproj": {}
+    "C:\\Users\\hp\\Desktop\\lpu.net\\Saturday Assignments\\21-02-26\\21-02\\21-02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Saturday Assignment\\21-02-26\\21-02\\21-02.csproj": {
+    "C:\\Users\\hp\\Desktop\\lpu.net\\Saturday Assignments\\21-02-26\\21-02\\21-02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Saturday Assignment\\21-02-26\\21-02\\21-02.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\lpu.net\\Saturday Assignments\\21-02-26\\21-02\\21-02.csproj",
         "projectName": "21-02",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Saturday Assignment\\21-02-26\\21-02\\21-02.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\lpu.net\\Saturday Assignments\\21-02-26\\21-02\\21-02.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Saturday Assignment\\21-02-26\\21-02\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\lpu.net\\Saturday Assignments\\21-02-26\\21-02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,296 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\views\\student\\idcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\views\\student\\idcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309103316_FixTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentReportCard\\Migrations\\20260309103316_FixTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\migrations\\20260309101713_addphotocolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\migrations\\20260309101713_addphotocolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\views\\student\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\views\\student\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\services\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\repositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\repositories\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|c:\\users\\hp\\source\\repos\\studentreportcard\\studentreportcard\\studentreportcard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0135975A-CBBE-4D84-AFDC-F3B9AF4396C7}|StudentReportCard\\StudentReportCard.csproj|solutionrelative:studentreportcard\\studentreportcard.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20260309101713_AddPhotoColumn.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309101713_AddPhotoColumn.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Migrations\\20260309101713_AddPhotoColumn.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309101713_AddPhotoColumn.cs",
+              "RelativeToolTip": "StudentReportCard\\Migrations\\20260309101713_AddPhotoColumn.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T10:17:14.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Services\\StudentService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Services\\StudentService.cs",
+              "RelativeToolTip": "StudentReportCard\\Services\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:58:41.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Services\\IStudentService.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Services\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Services\\IStudentService.cs",
+              "RelativeToolTip": "StudentReportCard\\Services\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:58:16.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IdCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Views\\Student\\IdCard.cshtml",
+              "RelativeDocumentMoniker": "StudentReportCard\\Views\\Student\\IdCard.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Views\\Student\\IdCard.cshtml",
+              "RelativeToolTip": "StudentReportCard\\Views\\Student\\IdCard.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T10:05:36.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20260309103316_FixTable.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309103316_FixTable.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Migrations\\20260309103316_FixTable.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309103316_FixTable.cs",
+              "RelativeToolTip": "StudentReportCard\\Migrations\\20260309103316_FixTable.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T10:33:16.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Models\\Student.cs",
+              "RelativeToolTip": "StudentReportCard\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:51:10.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "StudentReportCard\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA+wCQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:59:17.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Views\\Student\\Login.cshtml",
+              "RelativeDocumentMoniker": "StudentReportCard\\Views\\Student\\Login.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Views\\Student\\Login.cshtml",
+              "RelativeToolTip": "StudentReportCard\\Views\\Student\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T10:04:06.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "StudentReportCard\\Repositories\\StudentRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:57:39.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260309100659_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs",
+              "RelativeToolTip": "StudentReportCard\\Migrations\\20260309100659_InitialCreate.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T10:06:59.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Repositories\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Repositories\\IStudentRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Repositories\\IStudentRepository.cs",
+              "RelativeToolTip": "StudentReportCard\\Repositories\\IStudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:57:10.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Program.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Program.cs",
+              "RelativeToolTip": "StudentReportCard\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:55:05.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentReportCard\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\appsettings.json",
+              "RelativeToolTip": "StudentReportCard\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-09T09:53:36.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "StudentReportCard\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:53:10.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginVM.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\ViewModels\\LoginVM.cs",
+              "RelativeDocumentMoniker": "StudentReportCard\\ViewModels\\LoginVM.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\ViewModels\\LoginVM.cs",
+              "RelativeToolTip": "StudentReportCard\\ViewModels\\LoginVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:52:29.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StudentReportCard",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
+              "RelativeDocumentMoniker": "StudentReportCard\\StudentReportCard.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
+              "RelativeToolTip": "StudentReportCard\\StudentReportCard.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-09T09:49:27.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

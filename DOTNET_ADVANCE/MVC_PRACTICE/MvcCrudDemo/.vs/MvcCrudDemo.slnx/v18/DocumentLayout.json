@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\MvcCrudDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB8ED6-0CBA-473B-8934-05652039E3A9}|MvcCrudDemo\\MvcCrudDemo.csproj|c:\\users\\hp\\source\\repos\\mvccruddemo\\mvccruddemo\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB8ED6-0CBA-473B-8934-05652039E3A9}|MvcCrudDemo\\MvcCrudDemo.csproj|solutionrelative:mvccruddemo\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB8ED6-0CBA-473B-8934-05652039E3A9}|MvcCrudDemo\\MvcCrudDemo.csproj|c:\\users\\hp\\source\\repos\\mvccruddemo\\mvccruddemo\\models\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB8ED6-0CBA-473B-8934-05652039E3A9}|MvcCrudDemo\\MvcCrudDemo.csproj|solutionrelative:mvccruddemo\\models\\personrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcCrudDemo\\MvcCrudDemo\\Models\\PersonRepository.cs",
+              "RelativeDocumentMoniker": "MvcCrudDemo\\Models\\PersonRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcCrudDemo\\MvcCrudDemo\\Models\\PersonRepository.cs",
+              "RelativeToolTip": "MvcCrudDemo\\Models\\PersonRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:09:58.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcCrudDemo\\MvcCrudDemo\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "MvcCrudDemo\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcCrudDemo\\MvcCrudDemo\\Models\\Person.cs",
+              "RelativeToolTip": "MvcCrudDemo\\Models\\Person.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:08:44.283Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

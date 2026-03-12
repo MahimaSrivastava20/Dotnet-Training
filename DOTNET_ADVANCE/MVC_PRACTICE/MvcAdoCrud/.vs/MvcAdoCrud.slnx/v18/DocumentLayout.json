@@ -1,0 +1,153 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\data\\persondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\data\\persondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\views\\person\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\views\\person\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\views\\person\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\mvcadocrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\mvcadocrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|c:\\users\\hp\\source\\repos\\mvcadocrud\\mvcadocrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B7505A6-0070-6F05-FBF3-C3825EACA1C3}|MvcAdoCrud\\MvcAdoCrud.csproj|solutionrelative:mvcadocrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Views\\Person\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Views\\Person\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Views\\Person\\Index.cshtml",
+              "RelativeToolTip": "MvcAdoCrud\\Views\\Person\\Index.cshtml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwHsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:44:11.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Program.cs",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Program.cs",
+              "RelativeToolTip": "MvcAdoCrud\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:37:01.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonDB.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Data\\PersonDB.cs",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Data\\PersonDB.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Data\\PersonDB.cs",
+              "RelativeToolTip": "MvcAdoCrud\\Data\\PersonDB.cs",
+              "ViewState": "AgIAACQAAAAAAACRbgUtwDAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:34:10.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Models\\Person.cs",
+              "RelativeToolTip": "MvcAdoCrud\\Models\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:27:38.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Views\\Person\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Views\\Person\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Views\\Person\\Edit.cshtml",
+              "RelativeToolTip": "MvcAdoCrud\\Views\\Person\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-23T04:48:30.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Controllers\\PersonController.cs",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\Controllers\\PersonController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\Controllers\\PersonController.cs",
+              "RelativeToolTip": "MvcAdoCrud\\Controllers\\PersonController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwB0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T04:41:13.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MvcAdoCrud.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\MvcAdoCrud.csproj",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\MvcAdoCrud.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\MvcAdoCrud.csproj",
+              "RelativeToolTip": "MvcAdoCrud\\MvcAdoCrud.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T04:33:23.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\appsettings.json",
+              "RelativeDocumentMoniker": "MvcAdoCrud\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\MvcAdoCrud\\MvcAdoCrud\\appsettings.json",
+              "RelativeToolTip": "MvcAdoCrud\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T04:21:08.214Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

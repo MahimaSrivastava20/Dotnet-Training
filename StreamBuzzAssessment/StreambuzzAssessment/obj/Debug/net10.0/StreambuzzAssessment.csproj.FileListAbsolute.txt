@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\bin\Debug\net10.0\StreambuzzAssessment.exe
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\bin\Debug\net10.0\StreambuzzAssessment.deps.json
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\bin\Debug\net10.0\StreambuzzAssessment.runtimeconfig.json
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\bin\Debug\net10.0\StreambuzzAssessment.dll
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\bin\Debug\net10.0\StreambuzzAssessment.pdb
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.AssemblyInfo.cs
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.sourcelink.json
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.dll
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\refint\StreambuzzAssessment.dll
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.pdb
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\StreambuzzAssessment.genruntimeconfig.cache
+C:\Users\hp\Desktop\lpu.net\StreamBuzzAssessment\StreambuzzAssessment\obj\Debug\net10.0\ref\StreambuzzAssessment.dll

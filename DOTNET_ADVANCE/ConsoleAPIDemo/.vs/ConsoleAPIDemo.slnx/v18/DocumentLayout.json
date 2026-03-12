@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|c:\\users\\hp\\desktop\\mvc\u002Bef\u002Bweb_api\\consoleapidemo\\consoleapidemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|solutionrelative:consoleapidemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|c:\\users\\hp\\desktop\\mvc\u002Bef\u002Bweb_api\\consoleapidemo\\consoleapidemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|solutionrelative:consoleapidemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|c:\\users\\hp\\desktop\\mvc\u002Bef\u002Bweb_api\\consoleapidemo\\consoleapidemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|solutionrelative:consoleapidemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "ConsoleAPIDemo\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\appsettings.json",
+              "RelativeToolTip": "ConsoleAPIDemo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-12T06:15:31.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleAPIDemo\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Program.cs",
+              "RelativeToolTip": "ConsoleAPIDemo\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T06:00:27.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T09:16:24.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

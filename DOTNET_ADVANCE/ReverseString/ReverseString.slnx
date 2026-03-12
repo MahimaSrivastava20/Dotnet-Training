@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Src/">
+    <Project Path="ReverseStrings/ReverseStrings.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="ReverseStringTest/ReverseStringTest.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|c:\\users\\hp\\source\\repos\\studentsmarksapi\\studentsmarksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|solutionrelative:studentsmarksapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|c:\\users\\hp\\source\\repos\\studentsmarksapi\\studentsmarksapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|solutionrelative:studentsmarksapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|c:\\users\\hp\\source\\repos\\studentsmarksapi\\studentsmarksapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|solutionrelative:studentsmarksapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|c:\\users\\hp\\source\\repos\\studentsmarksapi\\studentsmarksapi\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|solutionrelative:studentsmarksapi\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|c:\\users\\hp\\source\\repos\\studentsmarksapi\\studentsmarksapi\\models\\collegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D9D260B-9C23-0024-8892-91DEC4E4E04C}|StudentsMarksAPI\\StudentsMarksAPI.csproj|solutionrelative:studentsmarksapi\\models\\collegedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "StudentsMarksAPI\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "StudentsMarksAPI\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:17:52.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CollegeDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Models\\CollegeDbContext.cs",
+              "RelativeDocumentMoniker": "StudentsMarksAPI\\Models\\CollegeDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Models\\CollegeDbContext.cs",
+              "RelativeToolTip": "StudentsMarksAPI\\Models\\CollegeDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T07:16:08.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentsMarksAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\appsettings.json",
+              "RelativeToolTip": "StudentsMarksAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-10T06:54:15.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Program.cs",
+              "RelativeDocumentMoniker": "StudentsMarksAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Program.cs",
+              "RelativeToolTip": "StudentsMarksAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T06:51:13.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentsMarksAPI\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\StudentsMarksAPI\\StudentsMarksAPI\\Models\\Student.cs",
+              "RelativeToolTip": "StudentsMarksAPI\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T10:48:35.991Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

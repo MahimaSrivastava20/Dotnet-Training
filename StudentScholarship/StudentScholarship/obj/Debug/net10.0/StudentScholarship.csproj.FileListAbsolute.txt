@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\bin\Debug\net10.0\StudentScholarship.exe
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\bin\Debug\net10.0\StudentScholarship.deps.json
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\bin\Debug\net10.0\StudentScholarship.runtimeconfig.json
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\bin\Debug\net10.0\StudentScholarship.dll
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\bin\Debug\net10.0\StudentScholarship.pdb
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.AssemblyInfo.cs
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.sourcelink.json
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.dll
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\refint\StudentScholarship.dll
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.pdb
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\StudentScholarship.genruntimeconfig.cache
+C:\Users\hp\Desktop\lpu.net\StudentScholarship\StudentScholarship\obj\Debug\net10.0\ref\StudentScholarship.dll

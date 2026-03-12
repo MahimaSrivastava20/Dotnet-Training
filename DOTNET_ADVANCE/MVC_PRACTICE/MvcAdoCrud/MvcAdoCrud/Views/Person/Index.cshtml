@@ -1,0 +1,128 @@
+﻿@model List<MvcAdoCrud.Models.Person>
+
+<style>
+    /* 🌈 Custom Theme Colors */
+    .header-theme {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+    }
+
+    .btn-theme {
+        background: #6a11cb;
+        color: white;
+        border: none;
+    }
+
+        .btn-theme:hover {
+            background: #5710a3;
+            color: white;
+        }
+
+    .table thead {
+        background: #2c2f48;
+        color: white;
+    }
+
+    .card {
+        border-radius: 12px;
+    }
+
+    .modal-header {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+    }
+</style>
+
+<div class="container mt-5">
+
+    <div class="card shadow-lg">
+        <div class="card-header header-theme d-flex justify-content-between">
+            <h4 class="mb-0">🎓 -- Student List --</h4>
+
+            <button class="btn btn-light fw-semibold" data-bs-toggle="modal" data-bs-target="#addModal">
+                ➕ Add Name
+            </button>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table table-bordered table-hover text-center">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th style="width:180px;">Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (Model.Count == 0)
+                    {
+                        <tr>
+                            <td colspan="3" class="text-muted">No records found</td>
+                        </tr>
+                    }
+                    else
+                    {
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td class="fw-semibold">@item.Name</td>
+                                <td>
+                                    <a href="/Person/Edit/@item.Id" class="btn btn-outline-warning btn-sm">Edit</a>
+                                    <a href="/Person/Delete/@item.Id"
+                                       class="btn btn-outline-danger btn-sm"
+                                       onclick="return confirm('Delete this record?')">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<!-- ✅ MODAL DIALOG -->
+<div class="modal fade" id="addModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form asp-action="Create" method="post">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Student</h5>
+                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <label class="form-label fw-semibold">Enter Name</label>
+
+                    <!-- ✔ VALIDATION INPUT -->
+                    <input name="Name" class="form-control" placeholder="Only alphabets allowed" />
+
+                    <!-- ✔ ERROR MESSAGE -->
+                    <span class="text-danger field-validation-valid"
+                          data-valmsg-for="Name"
+                          data-valmsg-replace="true"></span>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-theme">Save</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

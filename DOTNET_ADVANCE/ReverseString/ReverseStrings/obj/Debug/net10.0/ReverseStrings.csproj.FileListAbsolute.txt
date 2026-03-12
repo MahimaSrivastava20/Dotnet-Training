@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\bin\Debug\net10.0\ReverseStrings.exe
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\bin\Debug\net10.0\ReverseStrings.deps.json
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\bin\Debug\net10.0\ReverseStrings.runtimeconfig.json
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\bin\Debug\net10.0\ReverseStrings.dll
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\bin\Debug\net10.0\ReverseStrings.pdb
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.AssemblyInfo.cs
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.dll
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\refint\ReverseStrings.dll
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.pdb
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ReverseStrings.genruntimeconfig.cache
+C:\Users\hp\source\repos\ReverseString\ReverseStrings\obj\Debug\net10.0\ref\ReverseStrings.dll

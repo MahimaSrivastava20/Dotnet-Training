@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutonomousRobotSensor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ae334d0b33dd78c42a9668b66c119ce0a0b09fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9723b6cc6be74507720e4d8e2a6456f94ae0f819")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutonomousRobotSensor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutonomousRobotSensor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

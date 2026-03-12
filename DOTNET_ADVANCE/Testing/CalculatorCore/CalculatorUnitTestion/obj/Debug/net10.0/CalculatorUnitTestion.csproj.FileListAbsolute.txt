@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\bin\Debug\net10.0\CalculatorUnitTestion.exe
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\bin\Debug\net10.0\CalculatorUnitTestion.deps.json
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\bin\Debug\net10.0\CalculatorUnitTestion.runtimeconfig.json
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\bin\Debug\net10.0\CalculatorUnitTestion.dll
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\bin\Debug\net10.0\CalculatorUnitTestion.pdb
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.AssemblyInfo.cs
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.dll
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\refint\CalculatorUnitTestion.dll
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.pdb
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\CalculatorUnitTestion.genruntimeconfig.cache
+C:\Users\hp\source\repos\CalculatorCore\CalculatorUnitTestion\obj\Debug\net10.0\ref\CalculatorUnitTestion.dll

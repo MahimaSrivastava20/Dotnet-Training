@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\bin\Debug\net10.0\EvenChecker.exe
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\bin\Debug\net10.0\EvenChecker.deps.json
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\bin\Debug\net10.0\EvenChecker.runtimeconfig.json
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\bin\Debug\net10.0\EvenChecker.dll
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\bin\Debug\net10.0\EvenChecker.pdb
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.AssemblyInfo.cs
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.dll
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\refint\EvenChecker.dll
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.pdb
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\EvenChecker.genruntimeconfig.cache
+C:\Users\hp\source\repos\EvenChecker\EvenChecker\obj\Debug\net10.0\ref\EvenChecker.dll

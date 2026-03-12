@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\bin\Debug\net10.0\MsiSetupHW.exe
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\bin\Debug\net10.0\MsiSetupHW.deps.json
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\bin\Debug\net10.0\MsiSetupHW.runtimeconfig.json
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\bin\Debug\net10.0\MsiSetupHW.dll
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\bin\Debug\net10.0\MsiSetupHW.pdb
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.AssemblyInfo.cs
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.dll
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\refint\MsiSetupHW.dll
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.pdb
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\MsiSetupHW.genruntimeconfig.cache
+C:\Users\hp\source\repos\MsiSetupHW\MsiSetupHW\obj\Debug\net10.0\ref\MsiSetupHW.dll

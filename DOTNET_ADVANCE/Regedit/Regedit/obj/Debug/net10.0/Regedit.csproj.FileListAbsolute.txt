@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\Regedit\Regedit\bin\Debug\net10.0\Regedit.exe
+C:\Users\hp\source\repos\Regedit\Regedit\bin\Debug\net10.0\Regedit.deps.json
+C:\Users\hp\source\repos\Regedit\Regedit\bin\Debug\net10.0\Regedit.runtimeconfig.json
+C:\Users\hp\source\repos\Regedit\Regedit\bin\Debug\net10.0\Regedit.dll
+C:\Users\hp\source\repos\Regedit\Regedit\bin\Debug\net10.0\Regedit.pdb
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.AssemblyInfo.cs
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.dll
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\refint\Regedit.dll
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.pdb
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\Regedit.genruntimeconfig.cache
+C:\Users\hp\source\repos\Regedit\Regedit\obj\Debug\net10.0\ref\Regedit.dll

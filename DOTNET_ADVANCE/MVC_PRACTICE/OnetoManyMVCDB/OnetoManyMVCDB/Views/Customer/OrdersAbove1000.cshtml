@@ -1,0 +1,21 @@
+﻿@model List<OnetoManyMVCDB.Models.Customer>
+
+<h2>Customers whose total purchase is above 1000</h2>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Total Purchase</th>
+    </tr>
+
+    @foreach (var c in Model)
+    {
+        var total = c.Orders.Sum(o => o.Amount);
+
+        <tr>
+            <td>@c.Name</td>
+            <td>@total</td>
+        </tr>
+    }
+
+</table>

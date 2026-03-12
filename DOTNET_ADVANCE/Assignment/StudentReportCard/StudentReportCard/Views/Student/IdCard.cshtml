@@ -1,0 +1,121 @@
+﻿@model StudentReportCard.Models.Student
+
+<style>
+
+    body {
+        font-family: Arial;
+        background: #f3f4f6;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .idcard {
+        width: 350px;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+
+    .header {
+        background: #4f46e5;
+        color: white;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .photo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+        .photo img {
+            width: 90px;
+            border-radius: 50%;
+            border: 3px solid #4f46e5;
+        }
+
+    .details {
+        padding: 20px;
+    }
+
+        .details p {
+            margin: 5px 0;
+        }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+        table th {
+            background: #4f46e5;
+            color: white;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+</style>
+
+
+<div class="container">
+
+    <div class="idcard">
+
+        <div class="header">
+            <h3>STUDENT ID CARD</h3>
+        </div>
+
+        <div class="photo">
+            <img src="~/images/@Model.Photo" width="100" />
+        </div>
+
+        
+
+        <div class="details">
+
+            <p><b>ID:</b> @Model.Id</p>
+            <p><b>Name:</b> @Model.Name</p>
+            <p><b>Course:</b> @Model.Course</p>
+
+            <h4>Semester Marks</h4>
+
+            <table>
+
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+
+                <tr>
+                    <td>Maths</td>
+                    <td>@Model.Maths</td>
+                </tr>
+
+                <tr>
+                    <td>Science</td>
+                    <td>@Model.Science</td>
+                </tr>
+
+                <tr>
+                    <td>English</td>
+                    <td>@Model.English</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EvenChecker/EvenChecker.csproj" />
+  <Project Path="EvenCheckTests/EvenCheckTests.csproj" />
+</Solution>

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|c:\\users\\hp\\desktop\\mvc\u002Bef\u002Bweb_api\\consoleapidemo\\consoleapidemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1962BD21-37DA-8623-C339-7857012AEEDC}|ConsoleAPIDemo\\ConsoleAPIDemo.csproj|solutionrelative:consoleapidemo\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\MVC\u002BEF\u002BWEB_API\\ConsoleAPIDemo\\ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "ConsoleAPIDemo\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T09:16:24.129Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

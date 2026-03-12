@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\EvenChecker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAB0E94-F2E7-47A3-B208-FAC85104044B}|EvenCheckTests\\EvenCheckTests.csproj|c:\\users\\hp\\source\\repos\\evenchecker\\evenchecktests\\checkevennumtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAB0E94-F2E7-47A3-B208-FAC85104044B}|EvenCheckTests\\EvenCheckTests.csproj|solutionrelative:evenchecktests\\checkevennumtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB19407-B41C-4C56-ADD0-031D615D2023}|EvenChecker\\EvenChecker.csproj|c:\\users\\hp\\source\\repos\\evenchecker\\evenchecker\\numbercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB19407-B41C-4C56-ADD0-031D615D2023}|EvenChecker\\EvenChecker.csproj|solutionrelative:evenchecker\\numbercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AB19407-B41C-4C56-ADD0-031D615D2023}|EvenChecker\\EvenChecker.csproj|c:\\users\\hp\\source\\repos\\evenchecker\\evenchecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AB19407-B41C-4C56-ADD0-031D615D2023}|EvenChecker\\EvenChecker.csproj|solutionrelative:evenchecker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CheckEvenNumTest.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenCheckTests\\CheckEvenNumTest.cs",
+              "RelativeDocumentMoniker": "EvenCheckTests\\CheckEvenNumTest.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenCheckTests\\CheckEvenNumTest.cs",
+              "RelativeToolTip": "EvenCheckTests\\CheckEvenNumTest.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T06:43:04.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Numbercheck.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenChecker\\Numbercheck.cs",
+              "RelativeDocumentMoniker": "EvenChecker\\Numbercheck.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenChecker\\Numbercheck.cs",
+              "RelativeToolTip": "EvenChecker\\Numbercheck.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T06:28:32.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenChecker\\Program.cs",
+              "RelativeDocumentMoniker": "EvenChecker\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EvenChecker\\EvenChecker\\Program.cs",
+              "RelativeToolTip": "EvenChecker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T06:27:10.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

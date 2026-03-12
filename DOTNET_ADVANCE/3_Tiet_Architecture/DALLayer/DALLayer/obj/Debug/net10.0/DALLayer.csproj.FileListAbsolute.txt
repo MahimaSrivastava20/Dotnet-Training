@@ -1,0 +1,11 @@
+C:\Users\hp\source\repos\DALLayer\DALLayer\bin\Debug\net10.0\DALLayer.deps.json
+C:\Users\hp\source\repos\DALLayer\DALLayer\bin\Debug\net10.0\DALLayer.dll
+C:\Users\hp\source\repos\DALLayer\DALLayer\bin\Debug\net10.0\DALLayer.pdb
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.AssemblyInfo.cs
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.dll
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\refint\DALLayer.dll
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\DALLayer.pdb
+C:\Users\hp\source\repos\DALLayer\DALLayer\obj\Debug\net10.0\ref\DALLayer.dll

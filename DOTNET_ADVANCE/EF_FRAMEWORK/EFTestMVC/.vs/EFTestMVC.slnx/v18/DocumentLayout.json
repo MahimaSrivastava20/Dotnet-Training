@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|c:\\users\\hp\\source\\repos\\eftestmvc\\eftestmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|solutionrelative:eftestmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|c:\\users\\hp\\source\\repos\\eftestmvc\\eftestmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|solutionrelative:eftestmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|c:\\users\\hp\\source\\repos\\eftestmvc\\eftestmvc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|solutionrelative:eftestmvc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|c:\\users\\hp\\source\\repos\\eftestmvc\\eftestmvc\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|solutionrelative:eftestmvc\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|c:\\users\\hp\\source\\repos\\eftestmvc\\eftestmvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A422715D-1616-786D-93FD-F4EFA15D6C16}|EFTestMVC\\EFTestMVC.csproj|solutionrelative:eftestmvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "EFTestMVC\\Controllers\\StudentsController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "EFTestMVC\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T06:48:01.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "EFTestMVC\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Models\\Student.cs",
+              "RelativeToolTip": "EFTestMVC\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T06:33:24.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "EFTestMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\appsettings.json",
+              "RelativeToolTip": "EFTestMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-23T06:27:31.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Program.cs",
+              "RelativeDocumentMoniker": "EFTestMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Program.cs",
+              "RelativeToolTip": "EFTestMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T06:41:08.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EFTestMVC\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\EFTestMVC\\EFTestMVC\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EFTestMVC\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T06:39:36.033Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

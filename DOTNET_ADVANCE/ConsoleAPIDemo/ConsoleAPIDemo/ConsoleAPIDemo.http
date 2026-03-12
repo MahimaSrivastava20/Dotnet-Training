@@ -1,0 +1,6 @@
+@ConsoleAPIDemo_HostAddress = http://localhost:5252
+
+GET {{ConsoleAPIDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

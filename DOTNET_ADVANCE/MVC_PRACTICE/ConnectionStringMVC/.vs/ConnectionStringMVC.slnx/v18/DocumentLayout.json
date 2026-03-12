@@ -1,0 +1,163 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\data\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|c:\\users\\hp\\source\\repos\\connectionstringmvc\\connectionstringmvc\\connectionstringmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7FEFF5BE-AC3F-ABFC-FF9B-7F5EE238F887}|ConnectionStringMVC\\ConnectionStringMVC.csproj|solutionrelative:connectionstringmvc\\connectionstringmvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "ConnectionStringMVC\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T06:53:34.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Data\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Data\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Data\\StudentRepository.cs",
+              "RelativeToolTip": "ConnectionStringMVC\\Data\\StudentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T06:35:01.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Models\\Student.cs",
+              "RelativeToolTip": "ConnectionStringMVC\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T06:46:30.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "ConnectionStringMVC\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-20T07:11:02.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Program.cs",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Program.cs",
+              "RelativeToolTip": "ConnectionStringMVC\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T07:06:31.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ConnectionStringMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T04:42:50.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\appsettings.json",
+              "RelativeToolTip": "ConnectionStringMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-20T06:27:57.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConnectionStringMVC.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\ConnectionStringMVC.csproj",
+              "RelativeDocumentMoniker": "ConnectionStringMVC\\ConnectionStringMVC.csproj",
+              "ToolTip": "C:\\Users\\hp\\source\\repos\\ConnectionStringMVC\\ConnectionStringMVC\\ConnectionStringMVC.csproj",
+              "RelativeToolTip": "ConnectionStringMVC\\ConnectionStringMVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-20T06:34:14.709Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
