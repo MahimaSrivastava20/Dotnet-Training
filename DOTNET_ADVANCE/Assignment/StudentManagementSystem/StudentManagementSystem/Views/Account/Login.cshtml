@@ -1,0 +1,17 @@
+﻿@model StudentManagementSystem.ViewModels.LoginViewModel
+
+<h2>Login</h2>
+
+<form asp-action="Login">
+
+    <input asp-for="Email" placeholder="Email" />
+    <br />
+
+    <input asp-for="Password" placeholder="Password" />
+    <br />
+
+    <button type="submit">Login</button>
+
+</form>
+
+<p>@ViewBag.Error</p>
