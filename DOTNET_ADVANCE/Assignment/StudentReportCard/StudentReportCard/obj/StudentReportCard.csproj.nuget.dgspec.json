@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj": {}
+    "C:\\Users\\hp\\Desktop\\main\\lpu.net\\DOTNET_ADVANCE\\Assignment\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj": {
+    "C:\\Users\\hp\\Desktop\\main\\lpu.net\\DOTNET_ADVANCE\\Assignment\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\main\\lpu.net\\DOTNET_ADVANCE\\Assignment\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
         "projectName": "StudentReportCard",
-        "projectPath": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\main\\lpu.net\\DOTNET_ADVANCE\\Assignment\\StudentReportCard\\StudentReportCard\\StudentReportCard.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\source\\repos\\StudentReportCard\\StudentReportCard\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\main\\lpu.net\\DOTNET_ADVANCE\\Assignment\\StudentReportCard\\StudentReportCard\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

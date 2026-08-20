@@ -1,0 +1,71 @@
+﻿@model StudentReportCard.ViewModels.LoginVM
+
+<style>
+    body {
+        background: linear-gradient(135deg,#667eea,#764ba2);
+        font-family: Arial;
+    }
+
+    .login-card {
+        width: 350px;
+        margin: 120px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+        .login-card h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #667eea;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+        button:hover {
+            background: #5a67d8;
+        }
+
+    .error {
+        color: red;
+        text-align: center;
+    }
+</style>
+
+
+<div class="login-card">
+
+    <h2>Student Login</h2>
+
+    <form method="post">
+
+        <label>Student ID</label>
+        <input asp-for="Id" />
+
+        <label>Password</label>
+        <input asp-for="Password" type="password" />
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <p class="error">@ViewBag.Message</p>
+
+</div>

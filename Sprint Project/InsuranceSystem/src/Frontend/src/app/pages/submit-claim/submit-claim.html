@@ -1,0 +1,119 @@
+<div class="p-lg md:p-xl max-w-4xl mx-auto h-full flex flex-col">
+  <div class="mb-lg">
+    <a routerLink="/claims" class="font-body-sm text-outline hover:text-primary transition-colors inline-flex items-center gap-xs mb-md">
+      <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+      Back to Claims
+    </a>
+    <h1 class="font-h1 text-on-surface dark:text-white flex items-center gap-sm">
+      <span class="material-symbols-outlined text-[32px] text-primary">add_photo_alternate</span>
+      Submit a New Claim
+    </h1>
+    <p class="font-body-md text-on-surface-variant dark:text-gray-400 mt-xs">
+      Please provide detailed information and photographic evidence to process your claim faster.
+    </p>
+  </div>
+
+  <div class="bg-surface-container-lowest dark:bg-gray-900 border border-outline-variant dark:border-gray-800 rounded-2xl p-xl shadow-sm">
+
+    @if (error()) {
+      <div class="mb-lg p-md bg-error-container border border-error/30 text-on-error-container rounded-lg flex items-center gap-sm">
+        <span class="material-symbols-outlined text-[18px]">error</span>
+        <span class="font-body-sm">{{ error() }}</span>
+      </div>
+    }
+    @if (success()) {
+      <div class="mb-lg p-md bg-secondary-container border border-secondary/30 text-on-secondary-container rounded-lg flex items-center gap-sm">
+        <span class="material-symbols-outlined text-[18px]">check_circle</span>
+        <span class="font-body-sm">{{ success() }}</span>
+      </div>
+    }
+
+    <!-- Policy Summary -->
+    <div class="bg-surface-container dark:bg-gray-800 rounded-xl p-md mb-xl flex items-center gap-md">
+      <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-primary text-[24px]">policy</span>
+      </div>
+      <div>
+        <p class="font-label-sm text-outline uppercase">Filing claim against</p>
+        <h3 class="font-h3 text-on-surface dark:text-white">{{ policyName }} <span class="font-body-sm text-on-surface-variant font-normal">({{ policyType }})</span></h3>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="submitClaim()" class="space-y-lg">
+      
+      <div>
+        <label class="block font-label-md text-on-surface-variant dark:text-gray-300 mb-xs">Claim Title</label>
+        <input [(ngModel)]="title" name="title" type="text" required placeholder="e.g. Minor accident damage to front bumper"
+               class="w-full px-md py-sm rounded-lg border border-outline-variant dark:border-gray-700 bg-surface dark:bg-gray-800 text-on-surface dark:text-white font-body-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+        <div>
+          <div class="flex justify-between items-center mb-xs">
+            <label class="block font-label-md text-on-surface-variant dark:text-gray-300">Claim Amount (₹)</label>
+            <span class="font-label-sm text-primary font-bold">Max: ₹{{ remainingCoverageAmount }}</span>
+          </div>
+          <div class="relative">
+            <span class="absolute left-md top-1/2 -translate-y-1/2 font-label-md text-on-surface-variant">₹</span>
+            <input [(ngModel)]="amount" name="amount" type="number" min="1" step="1" required placeholder="0.00"
+                   class="w-full pl-10 pr-md py-sm rounded-lg border border-outline-variant dark:border-gray-700 bg-surface dark:bg-gray-800 text-on-surface dark:text-white font-body-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-label-md text-on-surface-variant dark:text-gray-300 mb-xs">Incident Date</label>
+          <input type="date" required
+                 class="w-full px-md py-sm rounded-lg border border-outline-variant dark:border-gray-700 bg-surface dark:bg-gray-800 text-on-surface dark:text-white font-body-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition">
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-label-md text-on-surface-variant dark:text-gray-300 mb-xs">Detailed Description</label>
+        <textarea [(ngModel)]="description" name="description" rows="4" required placeholder="Please describe how the incident occurred..."
+                  class="w-full px-md py-sm rounded-lg border border-outline-variant dark:border-gray-700 bg-surface dark:bg-gray-800 text-on-surface dark:text-white font-body-md focus:ring-2 focus:ring-primary focus:border-primary outline-none transition resize-none"></textarea>
+      </div>
+
+      <!-- File Upload (Mock) -->
+      <div>
+        <label class="block font-label-md text-on-surface-variant dark:text-gray-300 mb-xs">Evidence / Photos</label>
+        <div class="border-2 border-dashed border-outline-variant dark:border-gray-700 rounded-xl p-lg text-center bg-surface hover:bg-surface-container transition-colors relative">
+          <input type="file" accept="image/*" (change)="onFileChange($event)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+          <div class="flex flex-col items-center justify-center pointer-events-none">
+            <span class="material-symbols-outlined text-[32px] text-outline mb-sm">cloud_upload</span>
+            <p class="font-label-md text-primary">Click to upload photos</p>
+            <p class="font-body-sm text-outline mt-xs">JPEG, PNG up to 10MB</p>
+          </div>
+        </div>
+
+        @if (photoUrl) {
+          <div class="mt-md p-sm bg-surface-container rounded-lg inline-flex items-center gap-md border border-outline-variant">
+            <img [src]="photoUrl" alt="Preview" class="w-16 h-16 object-cover rounded shadow-sm">
+            <div>
+              <p class="font-label-sm text-on-surface">Image attached</p>
+              <button type="button" (click)="photoUrl = ''" class="font-label-sm text-error hover:underline mt-xs">Remove</button>
+            </div>
+          </div>
+        }
+      </div>
+
+      <div class="pt-lg border-t border-outline-variant dark:border-gray-800 flex justify-end gap-md">
+        <a routerLink="/claims"
+           class="px-lg py-md rounded-xl font-label-md text-on-surface hover:bg-surface-container transition-colors">
+          Cancel
+        </a>
+        <button type="submit" [disabled]="loading()"
+                class="px-xl py-md rounded-xl font-label-md bg-primary hover:bg-surface-tint text-on-primary shadow-sm hover:shadow-md transition-all active:scale-95 disabled:opacity-60 flex items-center gap-sm">
+          @if (loading()) {
+            <div class="w-4 h-4 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></div>
+            Submitting...
+          } @else {
+            <span class="material-symbols-outlined text-[18px]">send</span>
+            Submit Claim
+          }
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

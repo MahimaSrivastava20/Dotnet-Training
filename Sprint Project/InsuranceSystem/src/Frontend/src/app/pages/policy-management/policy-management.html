@@ -1,0 +1,694 @@
+<!-- Policy Management - Content Only (sidebar is in AppLayout) -->
+<div class="p-md md:p-xl">
+
+  <!-- Page Header -->
+  <div class="mb-xl relative rounded-2xl overflow-hidden shadow-md h-40 flex items-center justify-between p-lg md:p-xl">
+    <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop"
+      alt="Light purple abstract background" class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/70 to-transparent z-10"></div>
+    <div class="relative z-20 w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-md">
+      <div>
+        <h1 class="font-h1 text-white drop-shadow-md">
+          {{ authService.isAdmin() ? 'Policy Management' : 'Insurance Catalog' }}
+        </h1>
+        <p class="font-body-md text-gray-200 mt-xs drop-shadow-sm">
+          {{ authService.isAdmin() ? 'Create and manage insurance products' : 'Browse and subscribe to insurance
+          policies' }}
+        </p>
+      </div>
+      @if (authService.isAdmin()) {
+      <button (click)="openCreateForm()"
+        class="bg-white text-primary hover:bg-gray-100 font-label-md px-md py-sm rounded-lg shadow-md transition-colors flex items-center gap-xs shrink-0">
+        <span class="material-symbols-outlined text-[18px]">add</span>
+        New Policy
+      </button>
+      }
+    </div>
+  </div>
+
+  <!-- Alerts -->
+  @if (error()) {
+  <div
+    class="mb-md p-md bg-error-container border border-error/30 text-on-error-container rounded-lg flex items-center gap-sm">
+    <span class="material-symbols-outlined text-[20px]">error</span>
+    <span class="font-body-sm">{{ error() }}</span>
+  </div>
+  }
+  @if (success()) {
+  <div
+    class="mb-md p-md bg-secondary-container border border-secondary/30 text-on-secondary-container rounded-lg flex items-center gap-sm">
+    <span class="material-symbols-outlined text-[20px]">check_circle</span>
+    <span class="font-body-sm">{{ success() }}</span>
+  </div>
+  }
+
+  <!-- Loading -->
+  @if (loading()) {
+  <div class="flex items-center justify-center py-24">
+    <div class="flex flex-col items-center gap-md">
+      <div class="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+      <p class="font-body-md text-on-surface-variant">Loading policies...</p>
+    </div>
+  </div>
+  } @else {
+
+  @if (policies().length === 0) {
+  <div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-12 text-center">
+    <span class="material-symbols-outlined text-outline text-[56px]">policy</span>
+    <p class="font-h3 text-on-surface mt-md mb-sm">No policies available</p>
+    <p class="font-body-md text-on-surface-variant mb-lg">
+      {{ authService.isAdmin() ? 'Create the first policy to get started.' : 'No insurance policies are available at
+      this time.' }}
+    </p>
+    @if (authService.isAdmin()) {
+    <button (click)="openCreateForm()"
+      class="bg-primary text-on-primary font-label-md px-lg py-md rounded-lg hover:bg-surface-tint transition-colors shadow-sm inline-flex items-center gap-xs">
+      <span class="material-symbols-outlined text-[18px]">add</span>
+      Create First Policy
+    </button>
+    }
+  </div>
+  } @else {
+  <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-lg">
+    @for (policy of policies(); track policy.policyId) {
+    <div
+      class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm hover:shadow-md hover:border-primary/40 transition-all flex flex-col">
+      <div class="p-lg flex-1">
+        <div class="flex justify-between items-start mb-md">
+          <div>
+            <span class="inline-block font-label-sm text-outline uppercase mb-xs">{{ policy.type }}</span>
+            <h3 class="font-h3 text-on-surface">{{ policy.name }}</h3>
+          </div>
+          <span class="px-sm py-xs rounded-full font-label-sm shrink-0" [class.bg-secondary-container]="policy.isActive"
+            [class.text-on-secondary-container]="policy.isActive" [class.bg-surface-variant]="!policy.isActive"
+            [class.text-on-surface-variant]="!policy.isActive">
+            {{ policy.isActive ? 'Active' : 'Inactive' }}
+          </span>
+        </div>
+        <div class="mb-md flex gap-lg">
+          <div>
+            <p class="font-display text-h1 text-primary">₹{{ policy.premium }}</p>
+            <p class="font-body-sm text-on-surface-variant">per month</p>
+          </div>
+          <div class="border-l border-outline-variant pl-lg">
+            <p class="font-display text-h1 text-secondary">₹{{ policy.coverageAmount }}</p>
+            <p class="font-body-sm text-on-surface-variant">coverage limit</p>
+          </div>
+        </div>
+        <div class="mb-sm">
+          <p class="font-label-md text-on-surface-variant uppercase mb-xs">Coverage</p>
+          <p class="font-body-sm text-on-surface line-clamp-2">{{ policy.coverageDetails }}</p>
+        </div>
+        <div>
+          <p class="font-label-md text-on-surface-variant uppercase mb-xs">Terms</p>
+          <p class="font-body-sm text-on-surface line-clamp-2">{{ policy.terms }}</p>
+        </div>
+      </div>
+      <div class="px-lg pb-lg pt-md border-t border-surface-variant">
+        @if (authService.isAdmin()) {
+        <div class="flex flex-col gap-sm">
+          <div class="flex gap-sm">
+            <button (click)="openEditForm(policy)"
+              class="flex-1 font-label-md py-sm rounded-lg border border-primary text-primary hover:bg-surface-container transition-colors flex items-center justify-center gap-xs">
+              <span class="material-symbols-outlined text-[16px]">edit</span>
+              Edit
+            </button>
+            <button (click)="deletePolicy(policy.policyId)"
+              class="flex-1 font-label-md py-sm rounded-lg border border-error text-error hover:bg-error-container transition-colors flex items-center justify-center gap-xs">
+              <span class="material-symbols-outlined text-[16px]">delete</span>
+              Delete
+            </button>
+          </div>
+          <button (click)="viewingPolicy.set(policy)"
+            class="w-full font-label-md py-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center gap-xs">
+            <span class="material-symbols-outlined text-[16px]">visibility</span>
+            View Details
+          </button>
+        </div>
+        } @else if (authService.isCustomer()) {
+        <div class="flex flex-col gap-sm">
+          <button (click)="purchasePolicy(policy)" [disabled]="!policy.isActive"
+            class="w-full bg-primary hover:bg-surface-tint text-on-primary font-label-md py-sm rounded-lg shadow-sm transition-colors disabled:opacity-50 flex items-center justify-center gap-xs">
+            <span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+            Purchase Now
+          </button>
+          <button (click)="viewingPolicy.set(policy)"
+            class="w-full font-label-md py-sm rounded-lg border border-outline-variant text-on-surface-variant hover:bg-surface-container transition-colors flex items-center justify-center gap-xs">
+            <span class="material-symbols-outlined text-[16px]">visibility</span>
+            View Details
+          </button>
+        </div>
+        } @else {
+        <button (click)="viewingPolicy.set(policy)"
+          class="w-full font-label-md py-sm rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center gap-xs">
+          <span class="material-symbols-outlined text-[16px]">visibility</span>
+          View Details
+        </button>
+        }
+      </div>
+    </div>
+    }
+  </div>
+  }
+  }
+</div>
+
+<!-- Policy Form Modal -->
+@if (showPolicyForm()) {
+<div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+  <div
+    class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto border border-outline-variant">
+    <div class="p-xl">
+      <h2 class="font-h2 text-on-surface mb-sm">{{ editingPolicy() ? 'Edit Policy' : 'Create New Policy' }}</h2>
+      <p class="font-body-sm text-on-surface-variant mb-lg">Fill in the details below.</p>
+      <form (ngSubmit)="savePolicy()" class="space-y-md">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+          <div class="sm:col-span-2">
+            <label class="block font-label-md text-on-surface-variant mb-xs">Policy Name</label>
+            <input [(ngModel)]="policyForm.name" name="name" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+              placeholder="e.g. Comprehensive Auto Insurance">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Policy Type</label>
+            <select [(ngModel)]="policyForm.type" name="type" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none">
+              <option value="Health">Health</option>
+              <option value="Life">Life</option>
+              <option value="Vehicle">Vehicle</option>
+              <option value="Property">Property</option>
+              <option value="TermLife">Term Life</option>
+              <option value="Investment">Investment</option>
+              <option value="Travel">Travel</option>
+              <option value="ChildSavings">Child Savings</option>
+              <option value="Retirement">Retirement</option>
+              <option value="TwoWheeler">2 Wheeler</option>
+              <option value="FamilyHealth">Family Health</option>
+              <option value="TermWomen">Term Insurance (Women)</option>
+              <option value="ReturnOfPremium">Return of Premium</option>
+              <option value="GuaranteedReturn">Guaranteed Return</option>
+              <option value="EmployeeGroup">Employee Group</option>
+              <option value="HomeInsurance">Home Insurance</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Monthly Premium (₹)</label>
+            <input [(ngModel)]="policyForm.premium" name="premium" type="number" min="0" max="10000" step="0.01"
+              required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+              placeholder="0.00">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Coverage Amount (₹)</label>
+            <input [(ngModel)]="policyForm.coverageAmount" name="coverageAmount" type="number" min="0" step="100"
+              required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+              placeholder="0.00">
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block font-label-md text-on-surface-variant mb-xs">Coverage Details</label>
+            <textarea [(ngModel)]="policyForm.coverageDetails" name="coverageDetails" rows="3" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none resize-none"
+              placeholder="Describe what this policy covers..."></textarea>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block font-label-md text-on-surface-variant mb-xs">Terms & Conditions</label>
+            <textarea [(ngModel)]="policyForm.terms" name="terms" rows="3" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none resize-none"
+              placeholder="Enter policy terms..."></textarea>
+          </div>
+        </div>
+        <div class="flex gap-sm justify-end pt-md border-t border-surface-variant">
+          <button type="button" (click)="closeForm()"
+            class="px-lg py-sm bg-surface-container text-on-surface font-label-md rounded-lg hover:bg-surface-container-high">
+            Cancel
+          </button>
+          <button type="submit" [disabled]="loading()"
+            class="px-lg py-sm bg-primary text-on-primary font-label-md rounded-lg hover:bg-surface-tint shadow-sm disabled:opacity-50">
+            {{ loading() ? 'Saving...' : (editingPolicy() ? 'Update Policy' : 'Create Policy') }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+}
+
+<!-- Policy Detail Modal -->
+@if (viewingPolicy()) {
+<div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+  <div
+    class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl w-full max-w-lg border border-outline-variant overflow-hidden">
+    <!-- Modal Header -->
+    <div class="bg-primary text-on-primary p-xl">
+      <div class="flex justify-between items-start">
+        <div>
+          <span class="font-label-sm opacity-70 uppercase">{{ viewingPolicy()!.type }} Insurance</span>
+          <h2 class="font-h2 mt-xs">{{ viewingPolicy()!.name }}</h2>
+        </div>
+        <button (click)="viewingPolicy.set(null)"
+          class="w-8 h-8 rounded-full bg-on-primary/20 flex items-center justify-center hover:bg-on-primary/30 transition-colors shrink-0">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+      <div class="mt-md flex items-end justify-between">
+        <div class="flex items-end gap-xs">
+          <p class="font-display text-h1 font-bold">₹{{ viewingPolicy()!.premium }}</p>
+          <p class="font-body-sm opacity-70 mb-1">/ month</p>
+        </div>
+        <div class="flex flex-col items-end">
+          <span class="font-label-sm opacity-70 uppercase">Coverage</span>
+          <p class="font-display text-h2 font-bold text-secondary-container">₹{{ viewingPolicy()!.coverageAmount }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="p-xl space-y-lg">
+      <!-- Status -->
+      <div class="flex items-center gap-sm">
+        <span class="w-3 h-3 rounded-full" [class.bg-secondary]="viewingPolicy()!.isActive"
+          [class.bg-outline]="!viewingPolicy()!.isActive"></span>
+        <span class="font-label-md" [class.text-secondary]="viewingPolicy()!.isActive"
+          [class.text-outline]="!viewingPolicy()!.isActive">
+          {{ viewingPolicy()!.isActive ? 'Currently Available' : 'Not Available' }}
+        </span>
+      </div>
+
+      <!-- Coverage -->
+      <div>
+        <h3 class="font-h3 text-on-surface mb-sm flex items-center gap-sm">
+          <span class="material-symbols-outlined text-primary text-[20px]">health_and_safety</span>
+          What's Covered
+        </h3>
+        <p class="font-body-md text-on-surface-variant leading-relaxed">{{ viewingPolicy()!.coverageDetails }}</p>
+      </div>
+
+      <!-- Terms -->
+      <div>
+        <h3 class="font-h3 text-on-surface mb-sm flex items-center gap-sm">
+          <span class="material-symbols-outlined text-primary text-[20px]">gavel</span>
+          Terms & Conditions
+        </h3>
+        <p class="font-body-sm text-on-surface-variant leading-relaxed max-h-40 overflow-y-auto">{{
+          viewingPolicy()!.terms }}</p>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex gap-sm pt-md border-t border-surface-variant">
+        <button (click)="viewingPolicy.set(null)"
+          class="flex-1 px-lg py-sm bg-surface-container text-on-surface font-label-md rounded-lg hover:bg-surface-container-high transition-colors">
+          Close
+        </button>
+        @if (authService.isCustomer() && viewingPolicy()!.isActive) {
+        <button (click)="purchasePolicy(viewingPolicy()!); viewingPolicy.set(null)"
+          class="flex-1 px-lg py-sm bg-primary text-on-primary font-label-md rounded-lg hover:bg-surface-tint shadow-sm transition-colors flex items-center justify-center gap-xs">
+          <span class="material-symbols-outlined text-[16px]">shopping_cart</span>
+          Purchase Now
+        </button>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+}
+
+<!-- Policy Purchase Data Entry Modal -->
+@if (purchasingPolicy()) {
+<div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+  <div class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl w-full max-w-lg border border-outline-variant overflow-hidden">
+    <!-- Modal Header -->
+    <div class="bg-primary text-on-primary p-xl">
+      <div class="flex justify-between items-start">
+        <div>
+          <span class="font-label-sm opacity-70 uppercase">Purchase Details</span>
+          <h2 class="font-h2 mt-xs">{{ purchasingPolicy()!.name }}</h2>
+        </div>
+        <button (click)="purchasingPolicy.set(null)"
+          class="w-8 h-8 rounded-full bg-on-primary/20 flex items-center justify-center hover:bg-on-primary/30 transition-colors shrink-0">
+          <span class="material-symbols-outlined text-[18px]">close</span>
+        </button>
+      </div>
+      <p class="font-body-sm opacity-90 mt-sm">Please provide the necessary details for your policy.</p>
+    </div>
+
+    <!-- Modal Body -->
+    <div class="p-xl overflow-y-auto max-h-[60vh]">
+      <form #purchaseForm="ngForm" class="space-y-md">
+        
+        <!-- Common Fields -->
+        <div>
+          <label class="block font-label-md text-on-surface-variant mb-xs">Phone Number *</label>
+          <input [(ngModel)]="purchaseFormData.phoneNumber" name="phoneNumber" type="tel" required
+            class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none"
+            placeholder="e.g. +91 9876543210">
+        </div>
+        <div>
+          <label class="block font-label-md text-on-surface-variant mb-xs">Age *</label>
+          <input [(ngModel)]="purchaseFormData.age" name="age" type="number" min="18" max="100" required
+            class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none"
+            placeholder="Enter your age">
+        </div>
+
+        <!-- Conditional Fields based on Policy Type -->
+        
+        <!-- Health Insurance & Family Health -->
+        @if (purchasingPolicy()!.type === 'Health' || purchasingPolicy()!.type === 'FamilyHealth') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Plan Type *</label>
+            <select [(ngModel)]="purchaseFormData.healthPlanType" name="healthPlanType" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+              <option value="Individual">Individual</option>
+              <option value="Family">Family</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Gender *</label>
+            <select [(ngModel)]="purchaseFormData.gender" name="gender" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Medical History (e.g., Diabetes, BP)</label>
+            <textarea [(ngModel)]="purchaseFormData.medicalHistory" name="medicalHistory" rows="2"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none resize-none"></textarea>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Existing Illnesses</label>
+            <input [(ngModel)]="purchaseFormData.existingIllnesses" name="existingIllnesses" type="text"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Smoking/Alcohol Habits</label>
+            <input [(ngModel)]="purchaseFormData.habits" name="habits" type="text" placeholder="e.g. Occasional smoker"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">City *</label>
+            <input [(ngModel)]="purchaseFormData.city" name="city" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          @if (purchasingPolicy()!.type === 'FamilyHealth' || purchaseFormData.healthPlanType === 'Family') {
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Number of Family Members *</label>
+              <input [(ngModel)]="purchaseFormData.familyMembersCount" name="familyMembersCount" type="number" min="1" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Ages & Details of all members</label>
+              <textarea [(ngModel)]="purchaseFormData.familyDetails" name="familyDetails" rows="2"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none resize-none"></textarea>
+            </div>
+          }
+        }
+
+        <!-- Life / TermLife / TermWomen / ReturnOfPremium -->
+        @if (purchasingPolicy()!.type === 'Life' || purchasingPolicy()!.type === 'TermLife' || purchasingPolicy()!.type === 'TermWomen' || purchasingPolicy()!.type === 'ReturnOfPremium') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Gender *</label>
+            <select [(ngModel)]="purchaseFormData.gender" name="gender" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Income & Occupation *</label>
+            <input [(ngModel)]="purchaseFormData.occupation" name="occupation" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Lifestyle Habits</label>
+            <input [(ngModel)]="purchaseFormData.habits" name="habits" type="text"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Nominee Details *</label>
+            <input [(ngModel)]="purchaseFormData.nomineeName" name="nomineeName" type="text" placeholder="Name and Relation" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          @if (purchasingPolicy()!.type === 'TermWomen') {
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Pregnancy-related History</label>
+              <textarea [(ngModel)]="purchaseFormData.pregnancyHistory" name="pregnancyHistory" rows="2"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none resize-none"></textarea>
+            </div>
+          }
+        }
+
+        <!-- Vehicle / TwoWheeler -->
+        @if (purchasingPolicy()!.type === 'Vehicle' || purchasingPolicy()!.type === 'TwoWheeler') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Vehicle Type *</label>
+            <input [(ngModel)]="purchaseFormData.vehicleType" name="vehicleType" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none" placeholder="e.g. Sedan, SUV, Bike">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Registration Number *</label>
+            <input [(ngModel)]="purchaseFormData.registrationNumber" name="registrationNumber" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div class="grid grid-cols-2 gap-md">
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Engine No.</label>
+              <input [(ngModel)]="purchaseFormData.engineNo" name="engineNo" type="text"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Chassis No.</label>
+              <input [(ngModel)]="purchaseFormData.chassisNo" name="chassisNo" type="text"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-md mt-md">
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Manufacturing Year *</label>
+              <input [(ngModel)]="purchaseFormData.mfgYear" name="mfgYear" type="number" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Previous NCB %</label>
+              <input [(ngModel)]="purchaseFormData.ncb" name="ncb" type="number"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+          </div>
+        }
+
+        <!-- Property / HomeInsurance -->
+        @if (purchasingPolicy()!.type === 'Property' || purchasingPolicy()!.type === 'HomeInsurance') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Property Type (Home/Shop) *</label>
+            <input [(ngModel)]="purchaseFormData.propertyType" name="propertyType" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Location Address *</label>
+            <textarea [(ngModel)]="purchaseFormData.location" name="location" rows="2" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none resize-none"></textarea>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Construction Type</label>
+            <input [(ngModel)]="purchaseFormData.constructionType" name="constructionType" type="text"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Property Value (₹) *</label>
+            <input [(ngModel)]="purchaseFormData.propertyValue" name="propertyValue" type="number" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Security Features (CCTV, Alarms)</label>
+            <input [(ngModel)]="purchaseFormData.securityFeatures" name="securityFeatures" type="text"
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+        }
+
+        <!-- Investment / GuaranteedReturn -->
+        @if (purchasingPolicy()!.type === 'Investment' || purchasingPolicy()!.type === 'GuaranteedReturn') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Financial Goals *</label>
+            <input [(ngModel)]="purchaseFormData.goals" name="goals" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Risk Appetite *</label>
+            <select [(ngModel)]="purchaseFormData.risk" name="risk" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Investment Duration (Years) *</label>
+            <input [(ngModel)]="purchaseFormData.duration" name="duration" type="number" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Income Details *</label>
+            <input [(ngModel)]="purchaseFormData.income" name="income" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+        }
+
+        <!-- Travel -->
+        @if (purchasingPolicy()!.type === 'Travel') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Destination Country *</label>
+            <input [(ngModel)]="purchaseFormData.destination" name="destination" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div class="grid grid-cols-2 gap-md">
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Travel Start Date *</label>
+              <input [(ngModel)]="purchaseFormData.travelStart" name="travelStart" type="date" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Travel End Date *</label>
+              <input [(ngModel)]="purchaseFormData.travelEnd" name="travelEnd" type="date" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Purpose *</label>
+            <select [(ngModel)]="purchaseFormData.purpose" name="purpose" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+              <option value="Tourism">Tourism</option>
+              <option value="Business">Business</option>
+              <option value="Study">Study</option>
+            </select>
+          </div>
+        }
+
+        <!-- ChildSavings -->
+        @if (purchasingPolicy()!.type === 'ChildSavings') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Child's Age *</label>
+            <input [(ngModel)]="purchaseFormData.childAge" name="childAge" type="number" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Parent's Income *</label>
+            <input [(ngModel)]="purchaseFormData.parentIncome" name="parentIncome" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Goal (Education/Marriage) *</label>
+            <input [(ngModel)]="purchaseFormData.goal" name="goal" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Nominee Details *</label>
+            <input [(ngModel)]="purchaseFormData.nomineeName" name="nomineeName" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+        }
+
+        <!-- Retirement -->
+        @if (purchasingPolicy()!.type === 'Retirement') {
+          <div class="grid grid-cols-2 gap-md">
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Current Age *</label>
+              <input [(ngModel)]="purchaseFormData.currentAge" name="currentAge" type="number" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Retirement Age Goal *</label>
+              <input [(ngModel)]="purchaseFormData.retireAge" name="retireAge" type="number" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+            </div>
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Current Income & Savings *</label>
+            <input [(ngModel)]="purchaseFormData.incomeSavings" name="incomeSavings" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Monthly Pension Requirement *</label>
+            <input [(ngModel)]="purchaseFormData.pensionReq" name="pensionReq" type="number" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+        }
+
+        <!-- EmployeeGroup -->
+        @if (purchasingPolicy()!.type === 'EmployeeGroup') {
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Company Name & Details *</label>
+            <input [(ngModel)]="purchaseFormData.companyName" name="companyName" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Number of Employees *</label>
+            <input [(ngModel)]="purchaseFormData.employeeCount" name="employeeCount" type="number" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+          <div>
+            <label class="block font-label-md text-on-surface-variant mb-xs">Average Employee Age Group *</label>
+            <input [(ngModel)]="purchaseFormData.ageGroup" name="ageGroup" type="text" required
+              class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface focus:border-primary outline-none">
+          </div>
+        }
+
+        <!-- Required Documents Section (For ALL policies) -->
+        <div class="mt-xl pt-md border-t border-surface-variant">
+          <h3 class="font-h3 text-on-surface mb-sm flex items-center gap-sm">
+            <span class="material-symbols-outlined text-primary text-[20px]">upload_file</span>
+            Upload Required Documents
+          </h3>
+          <p class="font-body-sm text-on-surface-variant mb-md">Please upload clear copies of the following documents.</p>
+          
+          <div class="space-y-sm">
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Aadhaar / PAN Card *</label>
+              <input type="file" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Address Proof *</label>
+              <input type="file" required
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer">
+            </div>
+            <div>
+              <label class="block font-label-md text-on-surface-variant mb-xs">Passport Size Photo *</label>
+              <input type="file" required accept="image/*"
+                class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer">
+            </div>
+            @if (purchasingPolicy()!.type === 'Life' || purchasingPolicy()!.type === 'TermLife' || purchasingPolicy()!.type === 'Investment' || purchasingPolicy()!.type === 'Retirement' || purchasingPolicy()!.type === 'TermWomen' || purchasingPolicy()!.type === 'ReturnOfPremium') {
+              <div>
+                <label class="block font-label-md text-on-surface-variant mb-xs">Income Proof *</label>
+                <input type="file" required
+                  class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer">
+              </div>
+            }
+            @if (purchasingPolicy()!.type === 'Health' || purchasingPolicy()!.type === 'FamilyHealth' || purchasingPolicy()!.type === 'Life' || purchasingPolicy()!.type === 'TermLife' || purchasingPolicy()!.type === 'TermWomen') {
+              <div>
+                <label class="block font-label-md text-on-surface-variant mb-xs">Medical Reports (if required)</label>
+                <input type="file"
+                  class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20 cursor-pointer">
+              </div>
+            }
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Actions -->
+    <div class="p-xl pt-0 mt-md">
+      <button (click)="proceedToPayment()" [disabled]="!purchaseForm.form.valid || loading()"
+        class="w-full py-md bg-primary text-on-primary font-label-lg rounded-lg hover:bg-surface-tint shadow-md transition-colors disabled:opacity-50 flex items-center justify-center gap-xs">
+        <span class="material-symbols-outlined text-[20px]">{{ loading() ? 'hourglass_empty' : 'credit_card' }}</span>
+        {{ loading() ? 'Processing...' : 'Proceed to Payment (₹' + purchasingPolicy()!.premium + ')' }}
+      </button>
+      <button (click)="purchasingPolicy.set(null)" [disabled]="loading()"
+        class="w-full mt-sm py-sm text-on-surface-variant font-label-md rounded-lg hover:bg-surface-container transition-colors disabled:opacity-50">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+}

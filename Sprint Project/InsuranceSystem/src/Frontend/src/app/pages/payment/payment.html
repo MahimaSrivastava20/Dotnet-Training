@@ -1,0 +1,151 @@
+<!-- Razorpay Payment Page -->
+<div class="min-h-screen bg-background dark:bg-gray-950 flex items-center justify-center p-md">
+  <div class="w-full max-w-2xl">
+
+    <!-- INIT / LOADING STATE - Order Summary + Pay Button -->
+    @if (step() === 'init' || step() === 'loading') {
+      <div class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-outline-variant">
+
+        <!-- Header -->
+        <div class="relative h-40 flex items-center justify-center p-xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?q=80&w=2070&auto=format&fit=crop" 
+               alt="Aesthetic gradient" 
+               class="absolute inset-0 w-full h-full object-cover z-0">
+          <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80 z-10"></div>
+          <div class="relative z-20 text-white w-full">
+            <div class="flex items-center gap-sm mb-xs">
+              <span class="material-symbols-outlined text-[28px] icon-fill">security</span>
+              <span class="font-display text-h3 font-bold">SafeHaven</span>
+            </div>
+            <h1 class="font-h2 mb-xs drop-shadow-md">Complete Subscription</h1>
+            <p class="font-body-sm opacity-90 drop-shadow-sm">You're one step away from activating your policy.</p>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="p-xl">
+          <h2 class="font-h3 text-on-surface dark:text-white mb-md">Order Summary</h2>
+
+          <div class="bg-surface-container dark:bg-gray-800 rounded-xl p-md mb-lg">
+            <div class="flex items-center gap-md">
+              <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                <span class="material-symbols-outlined text-primary">policy</span>
+              </div>
+              <div>
+                <p class="font-label-sm text-outline uppercase">{{ policyType }} Insurance</p>
+                <h3 class="font-h3 text-on-surface dark:text-white">{{ policyName }}</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-sm mb-lg">
+            <div class="flex justify-between items-center">
+              <span class="font-body-md text-on-surface-variant">Monthly Premium</span>
+              <span class="font-label-md text-on-surface dark:text-white">₹{{ amount }}</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="font-body-md text-on-surface-variant">GST (18%)</span>
+              <span class="font-label-md text-on-surface dark:text-white">₹{{ (amount * 0.18).toFixed(2) }}</span>
+            </div>
+            <div class="border-t border-outline-variant pt-sm flex justify-between items-center">
+              <span class="font-h3 text-on-surface dark:text-white">Total Due Today</span>
+              <span class="font-display text-h2 font-bold text-primary">₹{{ totalAmount() }}</span>
+            </div>
+          </div>
+
+          <!-- Razorpay Pay Button -->
+          <button (click)="openRazorpay()" [disabled]="step() === 'loading'"
+                  class="w-full bg-primary hover:bg-surface-tint text-on-primary font-label-md py-md rounded-xl shadow-md hover:shadow-lg transition-all active:scale-95 disabled:opacity-60 flex items-center justify-center gap-sm">
+            @if (step() === 'loading') {
+              <div class="w-5 h-5 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></div>
+              <span>Preparing payment...</span>
+            } @else {
+              <!-- Razorpay logo placeholder -->
+              <img src="https://razorpay.com/favicon.png" alt="Razorpay" class="w-5 h-5 rounded object-contain" onerror="this.style.display='none'">
+              <span>Pay ₹{{ totalAmount() }} via Razorpay</span>
+            }
+          </button>
+
+          <!-- Security note -->
+          <div class="mt-md flex items-center justify-center gap-xs text-outline">
+            <span class="material-symbols-outlined text-[16px]">lock</span>
+            <span class="font-body-sm">256-bit SSL · Secured by Razorpay</span>
+          </div>
+
+          <!-- Accepted methods -->
+          <div class="mt-lg border-t border-outline-variant pt-md">
+            <p class="font-label-sm text-outline text-center mb-sm">ACCEPTED PAYMENT METHODS</p>
+            <div class="flex items-center justify-center gap-md flex-wrap">
+              <span class="flex items-center gap-xs font-label-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px]">credit_card</span> Cards
+              </span>
+              <span class="flex items-center gap-xs font-label-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px]">phone_android</span> UPI
+              </span>
+              <span class="flex items-center gap-xs font-label-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px]">account_balance</span> Netbanking
+              </span>
+              <span class="flex items-center gap-xs font-label-sm text-on-surface-variant">
+                <span class="material-symbols-outlined text-[16px]">account_balance_wallet</span> Wallets
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-md text-center">
+            <a routerLink="/policies" class="font-body-sm text-outline hover:text-primary transition-colors">
+              ← Cancel and go back to policies
+            </a>
+          </div>
+        </div>
+      </div>
+    }
+
+    <!-- SUCCESS -->
+    @if (step() === 'success') {
+      <div class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl p-12 text-center border border-outline-variant">
+        <div class="w-24 h-24 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-lg">
+          <span class="material-symbols-outlined text-secondary text-[56px] icon-fill">check_circle</span>
+        </div>
+        <h2 class="font-h2 text-on-surface dark:text-white mb-sm">Payment Successful! 🎉</h2>
+        <p class="font-body-md text-on-surface-variant mb-xl">
+          Your subscription to <strong class="text-on-surface dark:text-white">{{ policyName }}</strong> is now active.
+          You'll receive a confirmation notification shortly.
+        </p>
+        <div class="bg-surface-container dark:bg-gray-800 rounded-xl p-md mb-xl inline-block">
+          <p class="font-label-sm text-outline uppercase mb-xs">Razorpay Transaction ID</p>
+          <p class="font-label-md text-on-surface dark:text-gray-200 font-mono">{{ transactionRef() }}</p>
+        </div>
+        <div class="mt-lg">
+          <button (click)="goToDashboard()"
+                  class="bg-primary text-on-primary font-label-md px-xl py-md rounded-xl shadow-sm hover:bg-surface-tint transition-colors inline-flex items-center gap-sm">
+            <span class="material-symbols-outlined text-[18px]">dashboard</span>
+            Go to Dashboard
+          </button>
+        </div>
+      </div>
+    }
+
+    <!-- ERROR -->
+    @if (step() === 'error') {
+      <div class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl p-12 text-center border border-outline-variant">
+        <div class="w-24 h-24 bg-error-container rounded-full flex items-center justify-center mx-auto mb-lg">
+          <span class="material-symbols-outlined text-error text-[56px]">cancel</span>
+        </div>
+        <h2 class="font-h2 text-on-surface dark:text-white mb-sm">Payment Failed</h2>
+        <p class="font-body-md text-on-surface-variant mb-xl">{{ error() }}</p>
+        <div class="flex gap-sm justify-center flex-wrap">
+          <button (click)="retry()"
+                  class="bg-primary text-on-primary font-label-md px-xl py-md rounded-xl shadow-sm hover:bg-surface-tint transition-colors inline-flex items-center gap-sm">
+            <span class="material-symbols-outlined text-[18px]">refresh</span>
+            Try Again
+          </button>
+          <a routerLink="/policies"
+             class="border border-outline-variant text-on-surface dark:text-gray-300 font-label-md px-xl py-md rounded-xl hover:bg-surface-container transition-colors inline-flex items-center gap-sm">
+            Cancel
+          </a>
+        </div>
+      </div>
+    }
+
+  </div>
+</div>

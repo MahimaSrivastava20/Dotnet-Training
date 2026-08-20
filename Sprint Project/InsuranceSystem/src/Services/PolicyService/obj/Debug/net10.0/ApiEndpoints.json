@@ -1,0 +1,202 @@
+[
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "GetAll",
+    "RelativePath": "policies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Create",
+    "RelativePath": "policies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.CreatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "GetById",
+    "RelativePath": "policies/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Update",
+    "RelativePath": "policies/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.CreatePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Delete",
+    "RelativePath": "policies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Activate",
+    "RelativePath": "policies/activate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.ActivatePolicyDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-Internal-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "DeductClaim",
+    "RelativePath": "policies/customer/{customerPolicyId}/deduct-claim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerPolicyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.DeductClaimDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "FixPending",
+    "RelativePath": "policies/fix-pending",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "X-Internal-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "InternalDeduct",
+    "RelativePath": "policies/internal/deduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.InternalDeductDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "X-Internal-Key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "MyPolicies",
+    "RelativePath": "policies/my-policies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Purchase",
+    "RelativePath": "policies/purchase",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PolicyService.DTOs.PurchasePolicyDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PolicyService.Controllers.PoliciesController",
+    "Method": "Renew",
+    "RelativePath": "policies/renew/{customerPolicyId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerPolicyId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

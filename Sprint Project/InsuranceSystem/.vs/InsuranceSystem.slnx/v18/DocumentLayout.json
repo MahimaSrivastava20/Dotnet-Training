@@ -1,0 +1,234 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\adminservice\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|solutionrelative:src\\services\\adminservice\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\paymentservice\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|solutionrelative:src\\services\\paymentservice\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F48B76F5-5916-FFA9-5C2D-65C32A319D45}|src\\Services\\IdentityService\\IdentityService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\identityservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F48B76F5-5916-FFA9-5C2D-65C32A319D45}|src\\Services\\IdentityService\\IdentityService.csproj|solutionrelative:src\\services\\identityservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\adminservice\\data\\adminreaddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|solutionrelative:src\\services\\adminservice\\data\\adminreaddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A1106C9-373E-FFAD-6460-144317825819}|src\\Services\\NotificationService\\NotificationService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\notificationservice\\messaging\\eventconsumers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A1106C9-373E-FFAD-6460-144317825819}|src\\Services\\NotificationService\\NotificationService.csproj|solutionrelative:src\\services\\notificationservice\\messaging\\eventconsumers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|solutionrelative:src\\services\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|solutionrelative:src\\services\\paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{918B406B-EB45-3F01-DA4E-6423DB2176AA}|src\\Services\\PaymentService\\PaymentService.csproj|solutionrelative:src\\services\\paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\shared\\sharedlibrary\\messaging\\rabbitmqconsumerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|solutionrelative:src\\shared\\sharedlibrary\\messaging\\rabbitmqconsumerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\shared\\sharedlibrary\\messaging\\irabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|solutionrelative:src\\shared\\sharedlibrary\\messaging\\irabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\shared\\sharedlibrary\\messaging\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A8BE3DD-E31A-3CDD-BBA1-FBFF5E16CEFF}|src\\Shared\\SharedLibrary\\SharedLibrary.csproj|solutionrelative:src\\shared\\sharedlibrary\\messaging\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\services\\adminservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{851EC61B-4CD5-F57A-FAD8-F25ADE548888}|src\\Services\\AdminService\\AdminService.csproj|solutionrelative:src\\services\\adminservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8518E414-104C-EAEF-A141-98DB483A0C12}|src\\Gateway\\ApiGateway\\ApiGateway.csproj|c:\\users\\hp\\desktop\\sprint project\\insurancesystem\\src\\gateway\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8518E414-104C-EAEF-A141-98DB483A0C12}|src\\Gateway\\ApiGateway\\ApiGateway.csproj|solutionrelative:src\\gateway\\apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "src\\Services\\AdminService\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "src\\Services\\AdminService\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T04:52:24.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdminReadDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\Data\\AdminReadDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Services\\AdminService\\Data\\AdminReadDbContext.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\Data\\AdminReadDbContext.cs",
+              "RelativeToolTip": "src\\Services\\AdminService\\Data\\AdminReadDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T04:51:58.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventConsumers.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\NotificationService\\Messaging\\EventConsumers.cs",
+              "RelativeDocumentMoniker": "src\\Services\\NotificationService\\Messaging\\EventConsumers.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\NotificationService\\Messaging\\EventConsumers.cs",
+              "RelativeToolTip": "src\\Services\\NotificationService\\Messaging\\EventConsumers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-06T09:33:00.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentsController.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Controllers\\PaymentsController.cs",
+              "RelativeDocumentMoniker": "src\\Services\\PaymentService\\Controllers\\PaymentsController.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Controllers\\PaymentsController.cs",
+              "RelativeToolTip": "src\\Services\\PaymentService\\Controllers\\PaymentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:14:41.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Services\\PaymentService\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Program.cs",
+              "RelativeToolTip": "src\\Services\\PaymentService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:43:54.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Services\\PaymentService\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\appsettings.json",
+              "RelativeToolTip": "src\\Services\\PaymentService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-04T04:43:48.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\IdentityService\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\Services\\IdentityService\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\IdentityService\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\Services\\IdentityService\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:41:48.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "src\\Services\\PaymentService\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeToolTip": "src\\Services\\PaymentService\\Services\\PaymentService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:27:40.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RabbitMQConsumerBase.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\RabbitMQConsumerBase.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\SharedLibrary\\Messaging\\RabbitMQConsumerBase.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\RabbitMQConsumerBase.cs",
+              "RelativeToolTip": "src\\Shared\\SharedLibrary\\Messaging\\RabbitMQConsumerBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:05:25.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RabbitMQPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\RabbitMQPublisher.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\SharedLibrary\\Messaging\\RabbitMQPublisher.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\RabbitMQPublisher.cs",
+              "RelativeToolTip": "src\\Shared\\SharedLibrary\\Messaging\\RabbitMQPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:05:45.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IRabbitMQPublisher.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\IRabbitMQPublisher.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\SharedLibrary\\Messaging\\IRabbitMQPublisher.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Shared\\SharedLibrary\\Messaging\\IRabbitMQPublisher.cs",
+              "RelativeToolTip": "src\\Shared\\SharedLibrary\\Messaging\\IRabbitMQPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T04:05:20.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Gateway\\ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "src\\Gateway\\ApiGateway\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Gateway\\ApiGateway\\Program.cs",
+              "RelativeToolTip": "src\\Gateway\\ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T07:19:31.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Services\\AdminService\\appsettings.json",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sprint Project\\InsuranceSystem\\src\\Services\\AdminService\\appsettings.json",
+              "RelativeToolTip": "src\\Services\\AdminService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-28T04:25:35.221Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

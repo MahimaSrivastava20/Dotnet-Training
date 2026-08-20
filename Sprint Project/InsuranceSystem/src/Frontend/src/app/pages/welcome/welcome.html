@@ -1,0 +1,240 @@
+<div class="min-h-screen bg-gradient-to-br from-primary/5 to-surface">
+  <!-- Hero Section -->
+  <div class="container mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h1 class="text-6xl font-bold text-primary mb-4 flex items-center justify-center gap-4">
+        <span class="material-symbols-outlined text-6xl" style="font-variation-settings: 'FILL' 1;">security</span>
+        SafeHaven
+      </h1>
+      <p class="text-2xl text-on-surface-variant mb-8">
+        Streamlined insurance management. Confidence in every claim, security in every policy.
+      </p>
+      <div class="flex gap-4 justify-center">
+        <a routerLink="/register" class="bg-primary text-on-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors shadow-lg">
+          Get Started
+        </a>
+        <a routerLink="/login" class="bg-surface-container text-on-surface px-8 py-4 rounded-lg font-semibold text-lg hover:bg-surface-container-high transition-colors border border-outline">
+          Sign In
+        </a>
+      </div>
+    </div>
+
+    <!-- Insurance Products Grid Section -->
+    <div class="mt-24 mb-20">
+      <div class="flex flex-col xl:flex-row gap-10 mb-12 items-center">
+        <!-- Text Intro -->
+        <div class="flex-1 w-full">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full font-semibold text-sm mb-6 border border-primary/20">
+            <span class="material-symbols-outlined text-[18px]">verified</span> Trusted by Millions
+          </div>
+          <h2 class="text-4xl md:text-5xl text-on-surface font-light mb-2">Find your perfect</h2>
+          <h2 class="text-4xl md:text-6xl text-primary font-bold mb-8 tracking-tight">Insurance Match</h2>
+          <div class="flex flex-col sm:flex-row gap-6">
+            <div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm w-full sm:w-auto">
+              <div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">speed</span>
+              </div>
+              <div class="text-on-surface font-medium text-sm leading-tight">Instant Policies<br><span class="text-on-surface-variant text-xs font-normal">Zero paperwork</span></div>
+            </div>
+            <div class="flex items-center gap-4 bg-surface-container-lowest p-4 rounded-xl border border-outline-variant shadow-sm w-full sm:w-auto">
+              <div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl">savings</span>
+              </div>
+              <div class="text-on-surface font-medium text-sm leading-tight">Lowest Prices<br><span class="text-on-surface-variant text-xs font-normal">Price match guarantee</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Premium Banner -->
+        <div class="flex-1 w-full relative rounded-[2rem] overflow-hidden shadow-xl bg-gradient-to-br from-primary via-primary/90 to-tertiary text-white p-10 min-h-[260px] flex flex-col justify-center">
+          <div class="relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/20 backdrop-blur-md rounded-full text-sm font-medium mb-4 border border-white/30">
+              <span class="material-symbols-outlined text-[18px]">stars</span> Featured Offer
+            </div>
+            <h3 class="text-3xl font-bold mb-2">Secure Your Family's Future</h3>
+            <p class="text-white/90 mb-6 max-w-sm text-sm">Get comprehensive health coverage today with an exclusive 25% discount on all premium plans.</p>
+            <a routerLink="/register" class="bg-white text-primary font-bold px-6 py-3 rounded-xl w-max flex items-center gap-2 hover:bg-gray-50 transition-all shadow-md group">
+              Explore Plans <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+          <!-- Abstract Decorations -->
+          <div class="absolute right-0 bottom-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mb-20"></div>
+          <div class="absolute right-20 top-0 w-40 h-40 bg-secondary/20 rounded-full blur-2xl -mt-10"></div>
+          <span class="material-symbols-outlined absolute -right-6 -bottom-6 text-[140px] text-white/10 rotate-[-15deg] pointer-events-none">shield_person</span>
+        </div>
+      </div>
+
+      <!-- Grid of Modern Cards -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 md:gap-6">
+        
+        @for (item of insuranceTypes; track item.id) {
+        <a href="#" (click)="showInsuranceDetails(item, $event)" class="group relative cursor-pointer block">
+          @if (item.badge) {
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-{{item.badgeColor}}-100 text-{{item.badgeColor}}-800 border border-{{item.badgeColor}}-200 text-[10px] font-bold px-3 py-1 rounded-full shadow-sm z-10 whitespace-nowrap">{{item.badge}}</div>
+          }
+          <div class="w-full aspect-square max-h-[160px] bg-surface rounded-2xl shadow-sm border border-outline-variant flex flex-col items-center justify-center p-4 hover:shadow-lg hover:border-primary/50 hover:-translate-y-1 transition-all overflow-hidden relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <img [src]="item.icon" [alt]="item.name" class="w-14 h-14 group-hover:scale-110 transition-transform mb-3 relative z-10">
+            <p class="text-center text-sm font-semibold text-on-surface leading-tight relative z-10">{{item.name}}</p>
+          </div>
+        </a>
+        }
+
+      </div>
+    </div>
+
+    <!-- Insurance Details Modal -->
+    @if (selectedInsurance()) {
+    <div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm" (click)="closeModal()">
+      <div class="bg-surface rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden border border-outline-variant" (click)="$event.stopPropagation()">
+        <!-- Header area with background -->
+        <div class="bg-gradient-to-br from-primary/10 to-surface p-6 flex flex-col items-center text-center relative border-b border-outline-variant">
+          <button (click)="closeModal()" class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface bg-surface-container rounded-full p-1 transition-colors">
+            <span class="material-symbols-outlined text-xl">close</span>
+          </button>
+          
+          <div class="w-20 h-20 bg-white rounded-2xl shadow-md flex items-center justify-center mb-4 p-4 border border-outline-variant">
+            <img [src]="selectedInsurance().icon" [alt]="selectedInsurance().name" class="w-full h-full object-contain">
+          </div>
+          
+          <h2 class="text-3xl font-bold text-on-surface mb-2">{{selectedInsurance().name}}</h2>
+          @if (selectedInsurance().badge) {
+            <span class="bg-{{selectedInsurance().badgeColor}}-100 text-{{selectedInsurance().badgeColor}}-800 text-xs font-bold px-3 py-1 rounded-full border border-{{selectedInsurance().badgeColor}}-200">
+              {{selectedInsurance().badge}}
+            </span>
+          }
+        </div>
+        
+        <!-- Content area -->
+        <div class="p-8">
+          <p class="text-on-surface-variant text-lg leading-relaxed mb-8 text-center">
+            {{selectedInsurance().desc}}
+          </p>
+          
+          <div class="flex flex-col gap-3">
+            <a routerLink="/register" class="w-full bg-primary text-on-primary font-bold py-3 px-6 rounded-xl text-center hover:bg-primary/90 transition-colors shadow-md text-lg">
+              Get Started Now
+            </a>
+            <button (click)="closeModal()" class="w-full bg-surface-container text-on-surface font-semibold py-3 px-6 rounded-xl hover:bg-surface-container-high transition-colors border border-outline">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+      <div (click)="toggleFeature('policy')" class="cursor-pointer bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant hover:border-primary/50 transition-colors">
+        <span class="material-symbols-outlined text-5xl text-primary mb-4 block">policy</span>
+        <h3 class="text-2xl font-bold text-on-surface mb-2">Policy Management</h3>
+        <p class="text-on-surface-variant">Browse, purchase, and manage your insurance policies all in one place.</p>
+        @if (activeFeature() === 'policy') {
+          <div class="mt-4 pt-4 border-t border-outline-variant text-sm text-on-surface">
+            Experience an intuitive interface where you can compare different coverage plans, view your current active policies, and seamlessly renew or purchase new insurance products without any paperwork.
+          </div>
+        }
+      </div>
+
+      <div (click)="toggleFeature('claims')" class="cursor-pointer bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant hover:border-primary/50 transition-colors">
+        <span class="material-symbols-outlined text-5xl text-primary mb-4 block">support_agent</span>
+        <h3 class="text-2xl font-bold text-on-surface mb-2">Claims Processing</h3>
+        <p class="text-on-surface-variant">Submit and track your insurance claims with ease and transparency.</p>
+        @if (activeFeature() === 'claims') {
+          <div class="mt-4 pt-4 border-t border-outline-variant text-sm text-on-surface">
+            Our streamlined claims process allows you to upload documents directly from your device, track the approval status in real-time, and communicate directly with your assigned claims adjuster.
+          </div>
+        }
+      </div>
+
+      <div (click)="toggleFeature('dashboard')" class="cursor-pointer bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant hover:border-primary/50 transition-colors">
+        <span class="material-symbols-outlined text-5xl text-primary mb-4 block">dashboard</span>
+        <h3 class="text-2xl font-bold text-on-surface mb-2">Real-time Dashboard</h3>
+        <p class="text-on-surface-variant">Monitor your policies, payments, and notifications in real-time.</p>
+        @if (activeFeature() === 'dashboard') {
+          <div class="mt-4 pt-4 border-t border-outline-variant text-sm text-on-surface">
+            Get a birds-eye view of your entire insurance portfolio. Track your recent payments, view urgent notifications, and access important documents securely from any device, anywhere.
+          </div>
+        }
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="mt-16 bg-primary/10 rounded-xl p-12">
+      <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">10K+</div>
+          <div class="text-on-surface-variant">Active Policies</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">5K+</div>
+          <div class="text-on-surface-variant">Happy Customers</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">98%</div>
+          <div class="text-on-surface-variant">Claim Approval Rate</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold text-primary mb-2">24/7</div>
+          <div class="text-on-surface-variant">Customer Support</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div class="mt-20 mb-8">
+      <h2 class="text-3xl font-bold text-center text-on-surface mb-10">What Our Customers Say</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-amber-500">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+            <p class="text-on-surface-variant italic mb-6">"SafeHaven made buying car insurance incredibly easy. The interface is beautiful and I got my policy activated instantly after payment!"</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="https://i.pravatar.cc/150?u=mahima" alt="Mahima S." class="w-10 h-10 rounded-full object-cover border-2 border-primary/20">
+            <div class="font-bold text-on-surface">Mahima S.</div>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-amber-500">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+            </div>
+            <p class="text-on-surface-variant italic mb-6">"The claims processing is a breeze. I uploaded my documents and could track the status in real-time. Highly recommended for peace of mind."</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="https://i.pravatar.cc/150?u=rahul" alt="Rahul K." class="w-10 h-10 rounded-full object-cover border-2 border-primary/20">
+            <div class="font-bold text-on-surface">Rahul K.</div>
+          </div>
+        </div>
+        <div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-outline-variant flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 mb-4 text-amber-500">
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star</span>
+              <span class="material-symbols-outlined icon-fill">star_half</span>
+            </div>
+            <p class="text-on-surface-variant italic mb-6">"I love the dashboard view. It groups all my purchases and payments clearly. It's the most modern insurance platform I've used."</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="https://i.pravatar.cc/150?u=priya" alt="Priya M." class="w-10 h-10 rounded-full object-cover border-2 border-primary/20">
+            <div class="font-bold text-on-surface">Priya M.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

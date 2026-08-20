@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Gateway/">
+    <Project Path="src/Gateway/ApiGateway/ApiGateway.csproj" />
+  </Folder>
+  <Folder Name="/src/Services/">
+    <Project Path="src/Services/AdminService/AdminService.csproj" />
+    <Project Path="src/Services/IdentityService/IdentityService.csproj" />
+    <Project Path="src/Services/NotificationService/NotificationService.csproj" />
+    <Project Path="src/Services/PaymentService/PaymentService.csproj" />
+    <Project Path="src/Services/PolicyService/PolicyService.csproj" />
+    <Project Path="src/Services/TicketService/TicketService.csproj" />
+  </Folder>
+  <Folder Name="/src/Shared/">
+    <Project Path="src/Shared/SharedLibrary/SharedLibrary.csproj" />
+  </Folder>
+</Solution>

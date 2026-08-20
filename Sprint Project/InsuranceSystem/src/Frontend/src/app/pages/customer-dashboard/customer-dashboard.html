@@ -1,0 +1,188 @@
+<!-- Customer Dashboard - Content Only (sidebar is in AppLayout) -->
+<div class="p-md md:p-xl">
+
+  <!-- Welcome / Hero Section -->
+  <div class="mb-xl relative rounded-2xl overflow-hidden shadow-md h-48 md:h-64 flex items-end p-lg md:p-xl bg-primary-fixed">
+    <img src="/insurance-banner-new.png" 
+         alt="Insurance Services" 
+         style="-webkit-mask-image: radial-gradient(circle, black 30%, transparent 80%); mask-image: radial-gradient(circle, black 30%, transparent 80%);"
+         class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/20 to-transparent z-10"></div>
+    <div class="relative z-20">
+      <h1 class="font-h1 text-white mb-xs drop-shadow-md">
+        Welcome back, {{ authService.currentUser()?.name || 'there' }} ✨
+      </h1>
+      <p class="font-body-md text-gray-200 drop-shadow-sm">Here's an overview of your insurance coverage and recent activity.</p>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  @if (loading()) {
+    <div class="flex items-center justify-center py-24">
+      <div class="flex flex-col items-center gap-md">
+        <div class="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        <p class="font-body-md text-on-surface-variant">Loading your data...</p>
+      </div>
+    </div>
+  } @else {
+
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-md mb-xl">
+      <div class="bg-primary text-on-primary rounded-xl p-lg shadow-sm">
+        <div class="flex justify-between items-start mb-md">
+          <span class="material-symbols-outlined icon-fill text-[32px] opacity-80">health_and_safety</span>
+          <span class="font-label-sm bg-on-primary/20 px-sm py-xs rounded-full">
+            {{ policies().length }} Active
+          </span>
+        </div>
+        <h3 class="font-body-sm mb-xs opacity-80">My Policies</h3>
+        <p class="font-display text-h1">{{ policies().length }}</p>
+      </div>
+
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-lg shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-md">
+          <span class="material-symbols-outlined">payments</span>
+        </div>
+        <h3 class="font-body-sm text-on-surface-variant mb-xs">Payments Made</h3>
+        <p class="font-display text-h2 text-on-surface">{{ payments().length }}</p>
+      </div>
+
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-lg shadow-sm">
+        <div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-md">
+          <span class="material-symbols-outlined">notifications</span>
+        </div>
+        <h3 class="font-body-sm text-on-surface-variant mb-xs">Notifications</h3>
+        <p class="font-display text-h2 text-on-surface">{{ notifications().length }}</p>
+      </div>
+    </div>
+
+    <!-- My Policies -->
+    <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-lg mb-lg">
+      <div class="flex justify-between items-center mb-md border-b border-surface-variant pb-sm">
+        <h2 class="font-h3 text-on-surface">My Policies</h2>
+        <a routerLink="/policies" class="font-label-md text-primary hover:underline">View All</a>
+      </div>
+
+      @if (policies().length === 0) {
+        <div class="text-center py-8">
+          <span class="material-symbols-outlined text-outline text-[48px]">policy</span>
+          <p class="font-body-md text-on-surface-variant mt-sm">No policies yet.</p>
+          <a routerLink="/policies"
+             class="inline-block mt-md font-label-md text-on-primary bg-primary px-md py-sm rounded-lg hover:bg-surface-tint transition-colors">
+            Browse Policies
+          </a>
+        </div>
+      } @else {
+        <div class="space-y-md">
+          @for (policy of policies(); track policy.customerPolicyId) {
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md p-md rounded-lg border border-outline-variant hover:border-primary/50 transition-colors">
+              <div>
+                <h3 class="font-body-md font-semibold text-on-surface">{{ policy.policyName }}</h3>
+                <p class="font-body-sm text-on-surface-variant">{{ policy.policyType }}</p>
+                <p class="font-body-sm text-on-surface-variant mt-xs">
+                  {{ policy.startDate | date:'mediumDate' }} – {{ policy.endDate | date:'mediumDate' }}
+                </p>
+              </div>
+              <div class="flex items-center gap-md">
+                <p class="font-label-md text-primary">₹{{ policy.premium }}<span class="text-on-surface-variant font-normal">/mo</span></p>
+                <span class="px-sm py-xs rounded-full font-label-sm"
+                      [class.bg-secondary-container]="policy.status === 'Active'"
+                      [class.text-on-secondary-container]="policy.status === 'Active'"
+                      [class.bg-surface-variant]="policy.status !== 'Active'"
+                      [class.text-on-surface-variant]="policy.status !== 'Active'">
+                  {{ policy.status }}
+                </span>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Policy Purchase Summary -->
+    <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-lg mb-lg">
+      <div class="flex justify-between items-center mb-md border-b border-surface-variant pb-sm">
+        <h2 class="font-h3 text-on-surface">Policy Purchase Summary</h2>
+      </div>
+
+      @if (groupedPolicies().length === 0) {
+        <div class="text-center py-8">
+          <p class="font-body-md text-on-surface-variant">No policies purchased yet.</p>
+        </div>
+      } @else {
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-md">
+          @for (group of groupedPolicies(); track group.policy.policyId) {
+            <div class="bg-surface-container rounded-lg p-md border border-outline-variant flex flex-col justify-between hover:border-primary/50 transition-colors">
+              <div>
+                <h3 class="font-body-md font-semibold text-primary mb-xs">{{ group.policy.policyName }}</h3>
+                <p class="font-body-sm text-on-surface-variant mb-xs">{{ group.policy.policyType }}</p>
+                <p class="font-label-md text-on-surface">₹{{ group.policy.premium }}<span class="text-on-surface-variant font-normal">/mo</span></p>
+              </div>
+              <div class="mt-md pt-sm border-t border-outline-variant flex justify-between items-center">
+                <span class="font-label-sm text-on-surface-variant">Total Purchases:</span>
+                <span class="bg-primary/10 text-primary px-sm py-xs rounded-full font-label-md font-bold">{{ group.count }}</span>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Payments & Notifications -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+      <!-- Payments -->
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-lg">
+        <h2 class="font-h3 text-on-surface mb-md border-b border-surface-variant pb-sm">Recent Payments</h2>
+        @if (payments().length === 0) {
+          <p class="font-body-md text-on-surface-variant text-center py-6">No payments recorded.</p>
+        } @else {
+          <div class="space-y-sm">
+            @for (payment of payments(); track payment.paymentId) {
+              <div class="flex justify-between items-center py-sm border-b border-surface-variant last:border-0">
+                <div>
+                  <p class="font-body-md text-on-surface font-medium">₹{{ payment.amount }}</p>
+                  <p class="font-body-sm text-on-surface-variant">{{ payment.createdAt | date:'mediumDate' }}</p>
+                </div>
+                <span class="px-sm py-xs bg-secondary-container text-on-secondary-container font-label-sm rounded-full">
+                  {{ payment.status }}
+                </span>
+              </div>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Notifications -->
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-lg">
+        <h2 class="font-h3 text-on-surface mb-md border-b border-surface-variant pb-sm">Notifications</h2>
+        @if (notifications().length === 0) {
+          <p class="font-body-md text-on-surface-variant text-center py-6">No notifications.</p>
+        } @else {
+          <div class="space-y-xs">
+            @for (notif of notifications(); track notif.notificationId) {
+              <div class="flex justify-between items-start gap-md p-sm rounded-lg transition-colors"
+                   [class.bg-surface-container]="!notif.isRead">
+                <div class="flex gap-sm items-start flex-1">
+                  <span class="material-symbols-outlined text-primary text-[18px] mt-xs shrink-0">
+                    {{ notif.isRead ? 'notifications' : 'notification_important' }}
+                  </span>
+                  <div>
+                    <p class="font-body-sm text-on-surface" [class.font-semibold]="!notif.isRead">{{ notif.message }}</p>
+                    <p class="font-body-sm text-outline mt-xs">{{ notif.createdAt | date:'short' }}</p>
+                  </div>
+                </div>
+                @if (!notif.isRead) {
+                  <button (click)="markNotificationAsRead(notif.notificationId)"
+                          class="font-label-sm text-primary hover:underline whitespace-nowrap shrink-0">
+                    Mark read
+                  </button>
+                }
+              </div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+
+  }
+</div>

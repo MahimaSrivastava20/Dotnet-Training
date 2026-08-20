@@ -1,0 +1,254 @@
+<div class="p-md md:p-xl">
+  <!-- Page Header -->
+  <div class="mb-xl relative rounded-2xl overflow-hidden shadow-md h-40 flex items-center justify-between p-lg md:p-xl">
+    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=2070&auto=format&fit=crop" 
+         alt="Support background" 
+         class="absolute inset-0 w-full h-full object-cover z-0">
+    <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-transparent z-10"></div>
+    <div class="relative z-20 w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-md">
+      <div>
+        <h1 class="font-h1 text-white drop-shadow-md">
+          {{ authService.isAdmin() ? 'Customer Support Queries' : 'Contact Support' }}
+        </h1>
+        <p class="font-body-md text-gray-200 mt-xs drop-shadow-sm">
+          {{ authService.isAdmin() ? 'Manage and respond to user queries' : 'We are here to help you with your insurance.' }}
+        </p>
+      </div>
+      @if (authService.isCustomer()) {
+        <button (click)="showCreateForm.set(true)"
+                class="bg-white text-primary hover:bg-gray-100 font-label-md px-md py-sm rounded-lg shadow-md transition-colors flex items-center gap-xs shrink-0">
+          <span class="material-symbols-outlined text-[18px]">add_circle</span>
+          Raise a Query
+        </button>
+      }
+    </div>
+  </div>
+
+  <!-- Admin Contact Info Banner (Customer Only) -->
+  @if (authService.isCustomer()) {
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-md mb-xl">
+      <div class="bg-surface-container-lowest rounded-xl p-md border border-outline-variant flex items-center gap-md shadow-sm">
+        <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined">call</span>
+        </div>
+        <div>
+          <p class="font-label-sm text-outline uppercase">Call Us</p>
+          <p class="font-body-md text-on-surface font-medium">{{ adminPhone }}</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-md border border-outline-variant flex items-center gap-md shadow-sm">
+        <div class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+          <span class="material-symbols-outlined">mail</span>
+        </div>
+        <div>
+          <p class="font-label-sm text-outline uppercase">Email Us</p>
+          <p class="font-body-md text-on-surface font-medium">{{ adminEmail }}</p>
+        </div>
+      </div>
+    </div>
+  }
+
+  <!-- Alerts -->
+  @if (error()) {
+    <div class="mb-md p-md bg-error-container border border-error/30 text-on-error-container rounded-lg flex items-center gap-sm">
+      <span class="material-symbols-outlined text-[20px]">error</span>
+      <span class="font-body-sm">{{ error() }}</span>
+    </div>
+  }
+  @if (success()) {
+    <div class="mb-md p-md bg-secondary-container border border-secondary/30 text-on-secondary-container rounded-lg flex items-center gap-sm">
+      <span class="material-symbols-outlined text-[20px]">check_circle</span>
+      <span class="font-body-sm">{{ success() }}</span>
+    </div>
+  }
+
+  <!-- Loading -->
+  @if (loading()) {
+    <div class="flex items-center justify-center py-24">
+      <div class="flex flex-col items-center gap-md">
+        <div class="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        <p class="font-body-md text-on-surface-variant">Loading queries...</p>
+      </div>
+    </div>
+  } @else {
+    <!-- Queries List -->
+    <h2 class="font-h3 text-on-surface mb-md">
+      {{ authService.isAdmin() ? 'All User Queries' : 'Your Past Queries' }}
+    </h2>
+    
+    @if (supportQueries().length === 0) {
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-12 text-center">
+        <span class="material-symbols-outlined text-outline text-[56px]">help_center</span>
+        <p class="font-body-md text-on-surface-variant mt-sm">No queries found.</p>
+      </div>
+    } @else {
+      <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant overflow-hidden">
+        <div class="divide-y divide-surface-variant">
+          @for (query of supportQueries(); track query.ticketId) {
+            <div class="p-md hover:bg-surface-container transition-colors cursor-pointer flex justify-between items-center"
+                 (click)="openQueryDetails(query)">
+              <div>
+                <h3 class="font-body-md font-semibold text-on-surface flex items-center gap-sm">
+                  {{ query.title }}
+                  @if (query.status === 'Resolved' || query.status === 'Closed') {
+                    <span class="material-symbols-outlined text-secondary text-[18px]">check_circle</span>
+                  }
+                </h3>
+                <p class="font-body-sm text-on-surface-variant line-clamp-1 max-w-xl">{{ query.description }}</p>
+                <p class="font-label-sm text-outline mt-xs">{{ query.createdAt | date:'mediumDate' }}</p>
+              </div>
+              <span class="px-sm py-xs rounded-full font-label-sm shrink-0"
+                    [class.bg-secondary-container]="query.status === 'Resolved' || query.status === 'Closed'"
+                    [class.text-on-secondary-container]="query.status === 'Resolved' || query.status === 'Closed'"
+                    [class.bg-surface-variant]="query.status === 'Open'"
+                    [class.text-on-surface-variant]="query.status === 'Open'"
+                    [class.bg-primary-container]="query.status === 'In Progress'"
+                    [class.text-on-primary-container]="query.status === 'In Progress'">
+                {{ query.status }}
+              </span>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  }
+</div>
+
+<!-- Modal: Create Query -->
+@if (showCreateForm()) {
+  <div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+    <div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg border border-outline-variant overflow-hidden">
+      <div class="bg-primary text-on-primary p-lg">
+        <h2 class="font-h2">Raise a Query</h2>
+        <p class="font-body-sm opacity-80">Our support team will get back to you shortly.</p>
+      </div>
+      <div class="p-xl space-y-md">
+        <div>
+          <label class="block font-label-md text-on-surface-variant mb-xs">Subject</label>
+          <input [(ngModel)]="newQuery.title" type="text"
+                 class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none"
+                 placeholder="What is this regarding?">
+        </div>
+        <div>
+          <label class="block font-label-md text-on-surface-variant mb-xs">Description</label>
+          <textarea [(ngModel)]="newQuery.description" rows="4"
+                    class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none resize-none"
+                    placeholder="Describe your issue or question..."></textarea>
+        </div>
+      </div>
+      <div class="flex gap-sm justify-end p-md border-t border-surface-variant bg-surface">
+        <button (click)="showCreateForm.set(false)"
+                class="px-lg py-sm bg-surface-container text-on-surface font-label-md rounded-lg hover:bg-surface-container-high transition-colors">
+          Cancel
+        </button>
+        <button (click)="submitQuery()" [disabled]="loading() || !newQuery.title || !newQuery.description"
+                class="px-lg py-sm bg-primary text-on-primary font-label-md rounded-lg hover:bg-surface-tint shadow-sm transition-colors disabled:opacity-50 flex items-center gap-xs">
+          <span class="material-symbols-outlined text-[18px]">send</span>
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- Modal: Query Details & Chat -->
+@if (viewingQuery()) {
+  <div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+    <div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl border border-outline-variant flex flex-col max-h-[90vh]">
+      
+      <!-- Header -->
+      <div class="p-lg border-b border-surface-variant flex justify-between items-center bg-surface shrink-0">
+        <div>
+          <div class="flex items-center gap-sm mb-xs">
+            <span class="px-sm py-xs rounded-full font-label-sm bg-surface-variant text-on-surface-variant">
+              {{ viewingQuery()!.status }}
+            </span>
+            <span class="font-label-sm text-outline">{{ viewingQuery()!.createdAt | date:'medium' }}</span>
+          </div>
+          <h2 class="font-h3 text-on-surface">{{ viewingQuery()!.title }}</h2>
+        </div>
+        <button (click)="closeQueryDetails()"
+                class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-container text-on-surface-variant transition-colors">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <!-- Chat History -->
+      <div class="flex-1 overflow-y-auto p-lg space-y-md bg-surface-container-low">
+        <!-- Original Query Message -->
+        <div class="flex gap-md">
+          <div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold shrink-0">
+            C
+          </div>
+          <div class="bg-surface-container-lowest border border-outline-variant p-md rounded-2xl rounded-tl-none shadow-sm flex-1">
+            <p class="font-label-sm text-outline mb-xs">Customer (Original Query)</p>
+            <p class="font-body-md text-on-surface whitespace-pre-wrap">{{ viewingQuery()!.description }}</p>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        @if (loadingComments()) {
+          <div class="text-center py-4">
+            <div class="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin inline-block"></div>
+          </div>
+        }
+        @for (comment of queryComments(); track comment.commentId) {
+          <div class="flex gap-md" [class.flex-row-reverse]="comment.userId === authService.currentUser()?.userId">
+            <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold shrink-0">
+              {{ comment.userName.charAt(0).toUpperCase() }}
+            </div>
+            <div class="p-md rounded-2xl shadow-sm flex-1 max-w-[80%]"
+                 [class.bg-primary]="comment.userId === authService.currentUser()?.userId"
+                 [class.text-on-primary]="comment.userId === authService.currentUser()?.userId"
+                 [class.rounded-tr-none]="comment.userId === authService.currentUser()?.userId"
+                 [class.bg-surface-container-lowest]="comment.userId !== authService.currentUser()?.userId"
+                 [class.border]="comment.userId !== authService.currentUser()?.userId"
+                 [class.border-outline-variant]="comment.userId !== authService.currentUser()?.userId"
+                 [class.text-on-surface]="comment.userId !== authService.currentUser()?.userId"
+                 [class.rounded-tl-none]="comment.userId !== authService.currentUser()?.userId">
+              <p class="font-label-sm mb-xs opacity-80">{{ comment.userName }}</p>
+              <p class="font-body-md whitespace-pre-wrap">{{ comment.message }}</p>
+              <p class="font-label-sm opacity-60 mt-xs text-right">{{ comment.createdAt | date:'shortTime' }}</p>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Action Area -->
+      @if (viewingQuery()!.status !== 'Closed' && viewingQuery()!.status !== 'Resolved') {
+        <div class="p-md border-t border-surface-variant bg-surface shrink-0">
+          <div class="flex gap-sm">
+            <textarea [(ngModel)]="newCommentText" rows="2"
+                      class="flex-1 px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none resize-none"
+                      placeholder="Type a response..."></textarea>
+            
+            <div class="flex flex-col gap-xs justify-end">
+              @if (authService.isAdmin()) {
+                <button (click)="answerQuery()" [disabled]="!newCommentText().trim() || loadingComments()"
+                        class="px-md py-xs bg-primary text-on-primary font-label-md rounded-lg hover:bg-surface-tint shadow-sm transition-colors disabled:opacity-50">
+                  Send Reply
+                </button>
+                <button (click)="dismissQuery(viewingQuery()!.ticketId)"
+                        class="px-md py-xs border border-secondary text-secondary font-label-md rounded-lg hover:bg-secondary-container transition-colors">
+                  Resolve Query
+                </button>
+              } @else {
+                <button (click)="addComment()" [disabled]="!newCommentText().trim() || loadingComments()"
+                        class="px-md py-sm bg-primary text-on-primary font-label-md rounded-lg hover:bg-surface-tint shadow-sm transition-colors disabled:opacity-50 h-full flex items-center justify-center">
+                  <span class="material-symbols-outlined">send</span>
+                </button>
+              }
+            </div>
+          </div>
+        </div>
+      } @else {
+        <div class="p-md border-t border-surface-variant bg-surface shrink-0 text-center">
+          <p class="font-body-md text-on-surface-variant flex items-center justify-center gap-xs">
+            <span class="material-symbols-outlined text-[18px]">lock</span>
+            This query has been resolved and closed.
+          </p>
+        </div>
+      }
+    </div>
+  </div>
+}

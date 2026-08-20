@@ -1,0 +1,80 @@
+<div class="bg-surface font-body-md text-on-surface min-h-screen flex items-center justify-center p-md">
+  <div class="w-full max-w-md">
+    <!-- Card -->
+    <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-xl text-center">
+      <!-- Icon -->
+      <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-lg">
+        <span class="material-symbols-outlined text-primary text-h1">mark_email_unread</span>
+      </div>
+
+      <h1 class="font-h2 text-on-surface mb-sm">Verify your email</h1>
+
+      <!-- Success State -->
+      @if (success()) {
+        <div class="mb-lg p-md bg-secondary-container border border-secondary/30 text-on-secondary-container rounded-lg flex items-center gap-sm">
+          <span class="material-symbols-outlined text-[20px]">check_circle</span>
+          <span class="font-body-sm">{{ success() }}</span>
+        </div>
+      }
+
+      <!-- Error State -->
+      @if (error()) {
+        <div class="mb-lg p-md bg-error-container border border-error/30 text-on-error-container rounded-lg flex items-center gap-sm">
+          <span class="material-symbols-outlined text-[20px]">error</span>
+          <span class="font-body-sm">{{ error() }}</span>
+        </div>
+      }
+
+      <p class="font-body-md text-on-surface-variant mb-xl">
+        We've sent a 6-digit verification code to<br>
+        <strong class="font-semibold text-on-surface">{{ email || 'your email address' }}</strong>
+      </p>
+
+      <form (ngSubmit)="onSubmit()" class="space-y-xl">
+        <!-- Email (if not already populated from query params) -->
+        @if (!email) {
+          <div class="text-left">
+            <label class="block font-label-md text-on-surface-variant mb-xs">Email Address</label>
+            <input [(ngModel)]="email" name="email" type="email" required
+                   class="w-full px-md py-sm rounded-lg border border-outline-variant bg-surface text-on-surface font-body-md focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-shadow"
+                   placeholder="name@company.com">
+          </div>
+        }
+
+        <!-- Code input -->
+        <div class="text-left">
+          <label class="block font-label-md text-on-surface-variant mb-xs">Verification Code</label>
+          <input [(ngModel)]="code" name="code" type="text" maxlength="6" required
+                 class="w-full text-center tracking-[0.5em] font-display text-h2 px-md py-md rounded-lg border border-outline-variant bg-surface text-on-surface focus:ring-1 focus:ring-primary focus:border-primary outline-none transition-shadow"
+                 placeholder="— — — — — —">
+        </div>
+
+        <button [disabled]="loading()"
+                class="w-full bg-primary hover:bg-surface-tint text-on-primary font-label-md py-md rounded-lg shadow-sm hover:shadow-md transition-all active:scale-95 disabled:opacity-50 flex items-center justify-center gap-sm"
+                type="submit">
+          @if (loading()) {
+            <div class="w-4 h-4 border-2 border-on-primary border-t-transparent rounded-full animate-spin"></div>
+            <span>Verifying...</span>
+          } @else {
+            <span>Verify Email</span>
+            <span class="material-symbols-outlined text-[18px]">verified</span>
+          }
+        </button>
+      </form>
+
+      <p class="mt-lg font-body-sm text-on-surface-variant">
+        Didn't receive the code?
+        <button (click)="resendCode()" [disabled]="loading()"
+                class="text-primary font-medium hover:underline focus:outline-none disabled:opacity-50" type="button">
+          Resend code
+        </button>
+      </p>
+
+      <div class="mt-md">
+        <a routerLink="/login" class="font-body-sm text-on-surface-variant hover:text-primary transition-colors">
+          ← Back to Login
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

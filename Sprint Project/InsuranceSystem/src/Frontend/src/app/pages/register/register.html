@@ -1,0 +1,74 @@
+<div class="bg-background min-h-screen flex items-center justify-center p-md">
+<div class="w-full max-w-xl">
+<!-- Header -->
+<div class="text-center mb-xl">
+<h1 class="font-display text-display text-primary flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined text-display" data-weight="fill" style="font-variation-settings: 'FILL' 1;">security</span>
+                SafeHaven
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-sm">Create your account to get started.</p>
+</div>
+<!-- Card Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-xl">
+
+<!-- Error/Success Messages -->
+@if (error()) {
+<div class="mb-lg p-md bg-error/10 border border-error rounded-lg">
+<p class="text-error font-body-sm text-body-sm">{{ error() }}</p>
+</div>
+}
+
+<!-- Form -->
+<form (ngSubmit)="onSubmit()" class="space-y-xl">
+<!-- Section 1: Personal Info -->
+<div class="space-y-md">
+<h2 class="font-h3 text-h3 text-on-surface border-b border-surface-variant pb-sm">Personal Info</h2>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-xs">Full Name</label>
+<input [(ngModel)]="name" name="name" class="w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-md py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" placeholder="e.g. Jane Doe" type="text" required/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-xs">Email Address</label>
+<input [(ngModel)]="email" name="email" class="w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-md py-sm font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" placeholder="name@company.com" type="email" required/>
+</div>
+</div>
+<!-- Section 2: Account Security -->
+<div class="space-y-md">
+<h2 class="font-h3 text-h3 text-on-surface border-b border-surface-variant pb-sm">Account Security</h2>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-xs">Password</label>
+<div class="relative">
+<input [(ngModel)]="password" name="password" class="w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-md py-sm pr-10 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" placeholder="Create a secure password" type="password" required minlength="6"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline cursor-pointer">visibility_off</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-xs">Confirm Password</label>
+<div class="relative">
+<input [(ngModel)]="confirmPassword" name="confirmPassword" class="w-full rounded-lg border border-outline-variant bg-surface-container-lowest px-md py-sm pr-10 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-shadow" placeholder="Confirm your password" type="password" required/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline cursor-pointer">visibility_off</span>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-md">
+<button [disabled]="loading()" class="w-full bg-primary hover:bg-surface-tint text-on-primary font-body-lg text-body-lg font-medium py-md rounded-lg shadow-sm hover:shadow-md transition-all active:scale-95 flex items-center justify-center gap-sm disabled:opacity-50" type="submit">
+                        @if (loading()) {
+                            <span>Creating Account...</span>
+                        } @else {
+                            <span>Register Account</span>
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        }
+</button>
+</div>
+</form>
+<!-- Footer Links -->
+<div class="mt-lg text-center">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    Already have an account? 
+                    <a routerLink="/login" class="text-primary font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded">Login</a>
+</p>
+</div>
+</div>
+</div>
+</div>

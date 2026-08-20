@@ -1,0 +1,358 @@
+<div class="p-lg md:p-xl max-w-7xl mx-auto h-full flex flex-col">
+  <div class="mb-xl flex justify-between items-end">
+    <div>
+      <h1 class="font-h1 text-on-surface dark:text-white flex items-center gap-sm">
+        <span class="material-symbols-outlined text-[32px] text-primary">assignment</span>
+        {{ authService.isCustomer() ? 'My Policies & Claims' : 'Claims Review Queue' }}
+      </h1>
+      <p class="font-body-md text-on-surface-variant dark:text-gray-400 mt-xs">
+        {{ authService.isCustomer() ? 'Manage your active policies and track claims' : 'Review, approve, or reject customer claims' }}
+      </p>
+    </div>
+  </div>
+
+  @if (error()) {
+    <div class="mb-lg p-md bg-error-container border border-error/30 text-on-error-container rounded-lg flex items-center gap-sm">
+      <span class="material-symbols-outlined text-[18px]">error</span>
+      <span class="font-body-sm">{{ error() }}</span>
+    </div>
+  }
+  @if (success()) {
+    <div class="mb-lg p-md bg-secondary-container border border-secondary/30 text-on-secondary-container rounded-lg flex items-center gap-sm">
+      <span class="material-symbols-outlined text-[18px]">check_circle</span>
+      <span class="font-body-sm">{{ success() }}</span>
+    </div>
+  }
+
+  <!-- ================= CUSTOMER VIEW ================= -->
+  @if (authService.isCustomer()) {
+    <!-- Tabs -->
+    <div class="flex gap-md border-b border-outline-variant dark:border-gray-800 mb-lg">
+      <button (click)="activeClaimTab.set('policies')"
+              class="px-lg py-sm font-label-md border-b-2 transition-colors flex items-center gap-xs"
+              [class.border-primary]="activeClaimTab() === 'policies'" [class.text-primary]="activeClaimTab() === 'policies'"
+              [class.border-transparent]="activeClaimTab() !== 'policies'" [class.text-on-surface-variant]="activeClaimTab() !== 'policies'">
+        <span class="material-symbols-outlined text-[18px]">policy</span>
+        My Purchased Policies
+      </button>
+      <button (click)="activeClaimTab.set('claims')"
+              class="px-lg py-sm font-label-md border-b-2 transition-colors flex items-center gap-xs"
+              [class.border-primary]="activeClaimTab() === 'claims'" [class.text-primary]="activeClaimTab() === 'claims'"
+              [class.border-transparent]="activeClaimTab() !== 'claims'" [class.text-on-surface-variant]="activeClaimTab() !== 'claims'">
+        <span class="material-symbols-outlined text-[18px]">receipt_long</span>
+        My Claims History
+      </button>
+    </div>
+
+    @if (loading()) {
+      <div class="flex-1 flex items-center justify-center">
+        <div class="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    } @else {
+      @if (activeClaimTab() === 'policies') {
+        <!-- Purchased Policies Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+          @for (policy of myPolicies(); track policy.customerPolicyId) {
+            <div class="bg-surface-container-lowest dark:bg-gray-900 border border-outline-variant dark:border-gray-800 rounded-2xl p-lg flex flex-col shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-start justify-between mb-md">
+                <div class="flex items-center gap-sm">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+                  </div>
+                  <div>
+                    <h3 class="font-h3 text-on-surface dark:text-white">{{ policy.policyName }}</h3>
+                    <p class="font-label-sm text-outline uppercase">{{ policy.policyType }}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-sm mb-lg flex-1">
+                <div class="flex justify-between items-center bg-surface-container dark:bg-gray-800 px-md py-sm rounded-lg">
+                  <span class="font-label-sm text-outline">Status</span>
+                  <span class="font-label-md text-secondary">Active</span>
+                </div>
+                <div class="flex justify-between items-center px-md py-sm">
+                  <span class="font-label-sm text-outline">Remaining Coverage</span>
+                  <span class="font-label-md text-primary font-bold">₹{{ policy.remainingCoverageAmount }} / ₹{{ policy.coverageAmount }}</span>
+                </div>
+                <div class="flex justify-between items-center px-md py-sm">
+                  <span class="font-label-sm text-outline">Start Date</span>
+                  <span class="font-label-md text-on-surface dark:text-gray-300">{{ policy.startDate | date:'mediumDate' }}</span>
+                </div>
+                <div class="flex justify-between items-center px-md py-sm">
+                  <span class="font-label-sm text-outline">End Date</span>
+                  <span class="font-label-md text-on-surface dark:text-gray-300">{{ policy.endDate | date:'mediumDate' }}</span>
+                </div>
+              </div>
+
+              <button (click)="fileClaim(policy)"
+                      class="w-full bg-error-container text-on-error-container hover:bg-error hover:text-on-error font-label-md py-md rounded-xl shadow-sm transition-colors flex items-center justify-center gap-sm">
+                <span class="material-symbols-outlined text-[18px]">add_circle</span>
+                Make a Claim
+              </button>
+            </div>
+          } @empty {
+            <div class="col-span-full flex flex-col items-center justify-center py-20 text-center bg-surface-container-lowest dark:bg-gray-900 rounded-2xl border border-outline-variant dark:border-gray-800 border-dashed">
+              <span class="material-symbols-outlined text-[48px] text-outline mb-sm">sentiment_dissatisfied</span>
+              <p class="font-body-lg text-on-surface-variant dark:text-gray-400">You haven't purchased any policies yet.</p>
+              <a routerLink="/policies" class="mt-md font-label-md text-primary hover:underline">Browse Policies</a>
+            </div>
+          }
+        </div>
+      } @else {
+        <!-- Claims History Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+          @for (claim of myClaims(); track claim.ticketId) {
+            <div class="bg-surface-container-lowest dark:bg-gray-900 border border-outline-variant dark:border-gray-800 rounded-xl p-md">
+              <div class="flex justify-between items-start mb-sm">
+                <h3 class="font-h3 text-on-surface dark:text-white">{{ claim.title }}</h3>
+                <span class="px-sm py-xs rounded-full font-label-sm"
+                      [class.bg-surface-container-high]="claim.status === 'Open'"
+                      [class.bg-primary-container]="claim.status === 'In Progress'" [class.text-on-primary-container]="claim.status === 'In Progress'"
+                      [class.bg-secondary-container]="claim.status === 'Resolved'" [class.text-on-secondary-container]="claim.status === 'Resolved'"
+                      [class.bg-error-container]="claim.status === 'Closed'" [class.text-on-error-container]="claim.status === 'Closed'">
+                  {{ claim.status }}
+                </span>
+              </div>
+              <p class="font-body-sm text-on-surface-variant line-clamp-2 mb-md">{{ claim.description }}</p>
+
+              @if (claim.claimDetails) {
+                <div class="bg-surface-container dark:bg-gray-800 rounded-lg p-sm mb-md">
+                  <div class="flex justify-between items-center mb-xs">
+                    <span class="font-label-sm text-outline">Amount Claimed</span>
+                    <span class="font-label-md text-on-surface dark:text-white">₹{{ claim.claimDetails.claimAmount }}</span>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <span class="font-label-sm text-outline">Approval Status</span>
+                    <span class="font-label-md"
+                          [class.text-secondary]="claim.claimDetails.approvalStatus === 'Approved'"
+                          [class.text-error]="claim.claimDetails.approvalStatus === 'Rejected'"
+                          [class.text-primary]="claim.claimDetails.approvalStatus === 'Pending'">
+                      {{ claim.claimDetails.approvalStatus }}
+                    </span>
+                  </div>
+                  @if (claim.claimDetails.rejectionReason) {
+                    <p class="font-body-sm text-error mt-sm border-t border-error/20 pt-sm">Reason: {{ claim.claimDetails.rejectionReason }}</p>
+                  }
+                </div>
+              }
+
+              <div class="text-right">
+                <span class="font-label-sm text-outline">Submitted on {{ claim.createdAt | date:'mediumDate' }}</span>
+              </div>
+            </div>
+          } @empty {
+            <div class="col-span-full py-10 text-center text-on-surface-variant">
+              No claims submitted yet.
+            </div>
+          }
+        </div>
+      }
+    }
+  }
+
+
+  <!-- ================= SPECIALIST / ADMIN VIEW ================= -->
+  @if (!authService.isCustomer()) {
+    <div class="flex-1 flex flex-col md:flex-row gap-lg min-h-0">
+      <!-- Claims List -->
+      <div class="w-full md:w-1/3 flex flex-col bg-surface-container-lowest dark:bg-gray-900 border border-outline-variant dark:border-gray-800 rounded-2xl overflow-hidden">
+        <div class="p-md bg-surface-container dark:bg-gray-800 border-b border-outline-variant dark:border-gray-800 flex justify-between items-center">
+          <span class="font-label-md text-on-surface dark:text-gray-200">{{ tickets().length }} claims</span>
+          <button (click)="loadTickets()" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors">
+            <span class="material-symbols-outlined text-[18px]">refresh</span>
+          </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto p-sm space-y-sm">
+          @if (loading() && tickets().length === 0) {
+            <div class="flex items-center justify-center py-10">
+              <div class="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+            </div>
+          }
+
+          @for (ticket of tickets(); track ticket.ticketId) {
+            <div class="p-md rounded-xl border cursor-pointer transition-colors"
+                 [class.bg-primary-container]="selectedTicket()?.ticketId === ticket.ticketId"
+                 [class.border-primary]="selectedTicket()?.ticketId === ticket.ticketId"
+                 [class.bg-surface]="selectedTicket()?.ticketId !== ticket.ticketId"
+                 [class.border-outline-variant]="selectedTicket()?.ticketId !== ticket.ticketId"
+                 (click)="selectTicket(ticket)">
+              <div class="flex justify-between items-start mb-xs">
+                <span class="font-label-sm text-outline">{{ ticket.createdAt | date:'short' }}</span>
+                <span class="px-sm py-xs rounded-full font-label-sm"
+                      [class.bg-surface-container-high]="ticket.status === 'Open'"
+                      [class.bg-primary]="ticket.status === 'In Progress'" [class.text-on-primary]="ticket.status === 'In Progress'"
+                      [class.bg-secondary]="ticket.status === 'Resolved'" [class.text-on-secondary]="ticket.status === 'Resolved'"
+                      [class.bg-error]="ticket.status === 'Closed'" [class.text-on-error]="ticket.status === 'Closed'">
+                  {{ ticket.status }}
+                </span>
+              </div>
+              <h3 class="font-label-md text-on-surface dark:text-white truncate">{{ ticket.title }}</h3>
+              <p class="font-body-sm text-on-surface-variant line-clamp-1 mt-xs">{{ ticket.description }}</p>
+            </div>
+          }
+          @if (!loading() && tickets().length === 0) {
+            <div class="text-center py-10 text-on-surface-variant">
+              <span class="material-symbols-outlined text-[48px] opacity-50 mb-sm">task</span>
+              <p class="font-body-md">No claims to review.</p>
+            </div>
+          }
+        </div>
+      </div>
+
+      <!-- Claim Details -->
+      <div class="w-full md:w-2/3 bg-surface-container-lowest dark:bg-gray-900 border border-outline-variant dark:border-gray-800 rounded-2xl flex flex-col overflow-hidden">
+        @if (selectedTicket()) {
+          <!-- Header -->
+          <div class="p-xl border-b border-outline-variant dark:border-gray-800">
+            <div class="flex justify-between items-start mb-md">
+              <h2 class="font-h2 text-on-surface dark:text-white">{{ selectedTicket()!.title }}</h2>
+              <span class="px-md py-sm bg-surface-container rounded-lg font-label-md border border-outline-variant">
+                Status: {{ selectedTicket()!.status }}
+              </span>
+            </div>
+            <p class="font-body-md text-on-surface-variant mb-lg leading-relaxed">{{ selectedTicket()!.description }}</p>
+
+            <div class="grid grid-cols-2 gap-md">
+              <div class="bg-surface-container dark:bg-gray-800 p-md rounded-xl border border-outline-variant/50">
+                <span class="font-label-sm text-outline block mb-xs">Customer ID</span>
+                <span class="font-label-md text-on-surface dark:text-white break-all">{{ selectedTicket()!.customerId }}</span>
+              </div>
+              <div class="bg-surface-container dark:bg-gray-800 p-md rounded-xl border border-outline-variant/50">
+                <span class="font-label-sm text-outline block mb-xs">Policy ID</span>
+                <span class="font-label-md text-on-surface dark:text-white break-all">{{ selectedTicket()!.policyId || 'N/A' }}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Claim Specific Info -->
+          @if (selectedTicket()!.claimDetails) {
+            <div class="p-xl bg-surface-container-lowest dark:bg-gray-900 border-b border-outline-variant dark:border-gray-800">
+              <h3 class="font-h3 text-on-surface dark:text-white mb-md flex items-center gap-sm">
+                <span class="material-symbols-outlined text-primary">request_quote</span>
+                Claim Details
+              </h3>
+              <div class="grid grid-cols-2 gap-md mb-md">
+                <div class="p-md rounded-xl border border-outline-variant/50">
+                  <span class="font-label-sm text-outline block mb-xs">Claim Amount</span>
+                  <span class="font-display text-h3 font-bold text-on-surface dark:text-white">₹{{ selectedTicket()!.claimDetails!.claimAmount }}</span>
+                </div>
+                <div class="p-md rounded-xl border border-outline-variant/50">
+                  <span class="font-label-sm text-outline block mb-xs">Approval Status</span>
+                  <span class="font-label-md uppercase"
+                        [class.text-primary]="selectedTicket()!.claimDetails!.approvalStatus === 'Pending'"
+                        [class.text-secondary]="selectedTicket()!.claimDetails!.approvalStatus === 'Approved'"
+                        [class.text-error]="selectedTicket()!.claimDetails!.approvalStatus === 'Rejected'">
+                    {{ selectedTicket()!.claimDetails!.approvalStatus }}
+                  </span>
+                </div>
+              </div>
+
+              @if (selectedTicket()!.claimDetails!.documents) {
+                <div class="mt-md">
+                  <span class="font-label-sm text-outline block mb-xs">Attached Evidence</span>
+                  <img [src]="selectedTicket()!.claimDetails!.documents" alt="Evidence" class="max-w-full h-auto max-h-64 rounded-lg border border-outline-variant object-contain">
+                </div>
+              }
+
+              @if (selectedTicket()!.claimDetails!.rejectionReason) {
+                <div class="mt-md p-md bg-error-container text-on-error-container rounded-lg border border-error/30">
+                  <span class="font-label-sm opacity-70 block mb-xs">Rejection Reason</span>
+                  <p class="font-body-md">{{ selectedTicket()!.claimDetails!.rejectionReason }}</p>
+                </div>
+              }
+
+              <!-- Actions for Specialists/Admin -->
+              @if ((!authService.isCustomer() || authService.isAdmin()) && selectedTicket()!.claimDetails!.approvalStatus === 'Pending') {
+                <div class="mt-lg flex gap-md">
+                  <button (click)="approveClaim(selectedTicket()!.ticketId)"
+                          class="flex-1 bg-secondary hover:bg-secondary-container hover:text-on-secondary-container text-on-secondary font-label-md py-md rounded-xl shadow-sm transition-colors flex items-center justify-center gap-xs">
+                    <span class="material-symbols-outlined text-[18px]">thumb_up</span>
+                    Approve Claim
+                  </button>
+                  <button (click)="openRejectForm(selectedTicket()!.ticketId)"
+                          class="flex-1 border border-error text-error hover:bg-error-container font-label-md py-md rounded-xl transition-colors flex items-center justify-center gap-xs">
+                    <span class="material-symbols-outlined text-[18px]">thumb_down</span>
+                    Reject Claim
+                  </button>
+                </div>
+              }
+            </div>
+          }
+
+          <!-- Comments / Activity -->
+          <div class="flex-1 overflow-y-auto p-xl bg-surface dark:bg-gray-950">
+            <h3 class="font-h3 text-on-surface dark:text-white mb-md">Activity</h3>
+            <div class="space-y-md">
+              @for (comment of selectedTicket()!.comments; track comment.commentId) {
+                <div class="bg-surface-container-lowest dark:bg-gray-900 p-md rounded-xl border border-outline-variant dark:border-gray-800">
+                  <div class="flex justify-between mb-xs">
+                    <span class="font-label-sm text-primary">{{ comment.userName }}</span>
+                    <span class="font-label-sm text-outline">{{ comment.createdAt | date:'short' }}</span>
+                  </div>
+                  <p class="font-body-md text-on-surface dark:text-gray-200">{{ comment.message }}</p>
+                </div>
+              } @empty {
+                <p class="text-on-surface-variant font-body-sm text-center py-4">No activity yet.</p>
+              }
+            </div>
+          </div>
+
+          <!-- Add Comment Input -->
+          <div class="p-md bg-surface-container-lowest dark:bg-gray-900 border-t border-outline-variant dark:border-gray-800">
+            <div class="flex gap-sm">
+              <input #commentInput type="text" placeholder="Add a comment or internal note..."
+                     class="flex-1 px-md py-sm bg-surface dark:bg-gray-800 border border-outline-variant dark:border-gray-700 rounded-lg text-on-surface font-body-md outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+                     (keyup.enter)="addComment(selectedTicket()!.ticketId, commentInput.value); commentInput.value = ''">
+              <button (click)="addComment(selectedTicket()!.ticketId, commentInput.value); commentInput.value = ''"
+                      class="px-lg bg-primary hover:bg-surface-tint text-on-primary rounded-lg font-label-md transition-colors flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">send</span>
+                Send
+              </button>
+            </div>
+          </div>
+
+        } @else {
+          <div class="flex-1 flex flex-col items-center justify-center p-xl text-center">
+            <div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mb-md">
+              <span class="material-symbols-outlined text-[40px] text-outline">visibility</span>
+            </div>
+            <h2 class="font-h2 text-on-surface dark:text-white mb-sm">Select a claim</h2>
+            <p class="font-body-md text-on-surface-variant dark:text-gray-400">Click any claim on the left to review its details here.</p>
+          </div>
+        }
+      </div>
+    </div>
+  }
+
+</div>
+
+<!-- Rejection Modal -->
+@if (showRejectForm()) {
+  <div class="fixed inset-0 bg-on-surface/50 flex items-center justify-center p-md z-50 backdrop-blur-sm">
+    <div class="bg-surface-container-lowest dark:bg-gray-900 rounded-2xl shadow-xl w-full max-w-md border border-outline-variant overflow-hidden">
+      <div class="p-xl">
+        <h2 class="font-h2 text-error mb-sm flex items-center gap-sm">
+          <span class="material-symbols-outlined text-[24px]">warning</span>
+          Reject Claim
+        </h2>
+        <p class="font-body-sm text-on-surface-variant mb-md">Please provide a reason for rejecting this claim. This will be visible to the customer.</p>
+
+        <textarea [(ngModel)]="rejectionReason" rows="4" placeholder="Enter rejection reason..."
+                  class="w-full p-md bg-surface border border-outline-variant rounded-lg text-on-surface focus:border-error focus:ring-1 focus:ring-error outline-none mb-lg resize-none"></textarea>
+
+        <div class="flex gap-sm">
+          <button (click)="closeRejectForm()"
+                  class="flex-1 py-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md rounded-lg transition-colors">
+            Cancel
+          </button>
+          <button (click)="rejectClaim()" [disabled]="!rejectionReason"
+                  class="flex-1 py-sm bg-error hover:bg-error-container text-on-error hover:text-on-error-container font-label-md rounded-lg transition-colors disabled:opacity-50">
+            Confirm Rejection
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+}
