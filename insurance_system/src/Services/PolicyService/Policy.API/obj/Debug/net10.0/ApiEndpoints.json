@@ -1,0 +1,225 @@
+[
+  {
+    "ContainingType": "Policy.API.Controllers.AdminPoliciesController",
+    "Method": "CreatePolicyCatalog",
+    "RelativePath": "api/v1/admin/policies",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Policy.API.Application.DTOs.CreatePolicyCatalogDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[Policy.API.Application.DTOs.PolicyCatalogDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.AdminPoliciesController",
+    "Method": "DeletePolicyCatalog",
+    "RelativePath": "api/v1/admin/policies/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[System.Boolean, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "GetPolicies",
+    "RelativePath": "api/v1/policies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.Nullable\u00601[[Insurance.Shared.Enums.PolicyType, Insurance.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[Policy.API.Application.DTOs.PolicyCatalogDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "CalculatePremium",
+    "RelativePath": "api/v1/policies/calculate-premium",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Policy.API.Application.DTOs.CalculatePremiumRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[Policy.API.Application.DTOs.PremiumCalculationResultDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "GetMyPolicies",
+    "RelativePath": "api/v1/policies/my-policies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[System.Collections.Generic.List\u00601[[Policy.API.Application.DTOs.UserPolicyDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "DownloadPolicyDocument",
+    "RelativePath": "api/v1/policies/my-policies/{id}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "InitiatePurchase",
+    "RelativePath": "api/v1/policies/purchase/initiate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Policy.API.Application.DTOs.InitiatePurchaseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[Policy.API.Application.DTOs.RazorpayOrderResponseDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "VerifyPayment",
+    "RelativePath": "api/v1/policies/purchase/verify-payment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Policy.API.Application.DTOs.VerifyRazorpayPaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[Policy.API.Application.DTOs.UserPolicyDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Policy.API.Controllers.PoliciesController",
+    "Method": "RenewPolicy",
+    "RelativePath": "api/v1/policies/renew/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Insurance.Shared.Models.ApiResponse\u00601[[Policy.API.Application.DTOs.UserPolicyDto, Policy.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

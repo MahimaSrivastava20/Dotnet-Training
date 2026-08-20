@@ -1,0 +1,12 @@
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\bin\Debug\net10.0\Insurance.Shared.deps.json
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\bin\Debug\net10.0\Insurance.Shared.dll
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\bin\Debug\net10.0\Insurance.Shared.pdb
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.csproj.AssemblyReference.cache
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.AssemblyInfoInputs.cache
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.AssemblyInfo.cs
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.dll
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\refint\Insurance.Shared.dll
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\Insurance.Shared.pdb
+C:\Users\hp\.gemini\antigravity\scratch\insurance_system\src\Shared\Insurance.Shared\obj\Debug\net10.0\ref\Insurance.Shared.dll

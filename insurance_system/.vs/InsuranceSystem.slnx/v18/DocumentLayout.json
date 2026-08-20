@@ -1,0 +1,218 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1EE249A8-4EB5-5403-BE14-C2F3AD3B8E57}|tests\\Insurance.Tests\\Insurance.Tests.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\tests\\insurance.tests\\identityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EE249A8-4EB5-5403-BE14-C2F3AD3B8E57}|tests\\Insurance.Tests\\Insurance.Tests.csproj|solutionrelative:tests\\insurance.tests\\identityservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE7DFD63-07C5-B706-802A-8771962D782F}|src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\services\\policyservice\\policy.api\\policy.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BE7DFD63-07C5-B706-802A-8771962D782F}|src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj|solutionrelative:src\\services\\policyservice\\policy.api\\policy.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B51E3E8D-C867-80B1-F3AE-88283E09F4B7}|src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\services\\identityservice\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B51E3E8D-C867-80B1-F3AE-88283E09F4B7}|src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj|solutionrelative:src\\services\\identityservice\\identity.api\\identity.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\security\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\security\\jwttokenhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\security\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\models\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\enums\\ticketstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\enums\\ticketstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\enums\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\enums\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\shared\\insurance.shared\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA157CD3-3698-0D1A-74EB-A99C53732194}|src\\Shared\\Insurance.Shared\\Insurance.Shared.csproj|solutionrelative:src\\shared\\insurance.shared\\enums\\paymentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0071658E-578D-F76D-A30C-4A1DAA418446}|src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj|c:\\users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\services\\ticketservice\\ticket.api\\ticket.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0071658E-578D-F76D-A30C-4A1DAA418446}|src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj|solutionrelative:src\\services\\ticketservice\\ticket.api\\ticket.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IdentityServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\tests\\Insurance.Tests\\IdentityServiceTests.cs",
+              "RelativeDocumentMoniker": "tests\\Insurance.Tests\\IdentityServiceTests.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\tests\\Insurance.Tests\\IdentityServiceTests.cs",
+              "RelativeToolTip": "tests\\Insurance.Tests\\IdentityServiceTests.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:35:32.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Policy.API.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj",
+              "RelativeDocumentMoniker": "src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj",
+              "RelativeToolTip": "src\\Services\\PolicyService\\Policy.API\\Policy.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-19T06:25:45.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Identity.API.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj",
+              "RelativeDocumentMoniker": "src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj",
+              "RelativeToolTip": "src\\Services\\IdentityService\\Identity.API\\Identity.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-19T06:25:41.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Class1.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Class1.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Class1.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:33.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtTokenHelper.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Security\\JwtTokenHelper.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Security\\JwtTokenHelper.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Security\\JwtTokenHelper.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Security\\JwtTokenHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:25.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Security\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Security\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Security\\JwtSettings.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Security\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:21.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Models\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Models\\ApiResponse.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Models\\ApiResponse.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Models\\ApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:15.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Enums\\UserRole.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\UserRole.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Enums\\UserRole.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:13.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TicketStatus.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\TicketStatus.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Enums\\TicketStatus.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\TicketStatus.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Enums\\TicketStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:11.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PolicyType.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\PolicyType.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Enums\\PolicyType.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\PolicyType.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Enums\\PolicyType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:07.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PaymentStatus.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\PaymentStatus.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\Insurance.Shared\\Enums\\PaymentStatus.cs",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Shared\\Insurance.Shared\\Enums\\PaymentStatus.cs",
+              "RelativeToolTip": "src\\Shared\\Insurance.Shared\\Enums\\PaymentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T06:25:03.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ticket.API.csproj",
+              "DocumentMoniker": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj",
+              "RelativeDocumentMoniker": "src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj",
+              "ToolTip": "C:\\Users\\hp\\.gemini\\antigravity\\scratch\\insurance_system\\src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj",
+              "RelativeToolTip": "src\\Services\\TicketService\\Ticket.API\\Ticket.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-19T06:24:59.973Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
